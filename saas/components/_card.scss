@@ -1,0 +1,112 @@
+// NAVBAR   
+    
+    .nav-section{
+        background-color: $white-bg;
+        padding: 20px 25px;
+        padding-bottom: 40px;
+        
+        .nav-section h2{
+
+        font-size: $h2-font-size;
+        font-weight: $h2-font-weight;
+        line-height: $h2-line-height;
+        margin: 25px 0;      
+        }
+
+         .how-it-works-nav .three-options{
+            display: flex;
+            flex-direction: row;
+            align-items: center;   
+            border-radius: 20px;
+            box-shadow: $base-box-shadow;
+            width: 322.49px;
+            height: 72.38px;  
+            margin-bottom: 20px;  
+            gap: 40px;  
+            background-color: $page-light-grey-bg;      
+
+            .three-options i{
+                margin-right: -15px;      
+            }
+            
+            .three-options p{
+                font-size: $p-font-size;
+                font-weight: $p-font-weight;
+                line-height: $p-line-height;  
+            }    
+
+            h2.one{
+                margin: -15px;        
+            }
+
+            .one{
+                margin: 0 -15px;
+                border-radius: 50px;
+                padding: 10px 15px;
+                background-color: $primary-purple;
+                color: $white-font;
+                font-size: 14.18px;
+                font-weight: 500;
+                line-height: 16.62px;
+            }
+        }
+
+        #choose-restaurant i{
+            margin: 0 5px;
+            width: 13.02px;
+            height: 19.9px;
+            color: $grey-font;
+        }    
+}
+
+//KITCHEN WEST CARD
+
+
+#kitchen-west {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px; 
+
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+        margin-left: 10px;
+        padding: 10px 0;
+
+        i {
+            color: #353535;
+            margin-left: 200px;
+            width: 22px;
+            height: 21px;            
+
+    }
+    i:hover {
+        filter: invert(61%) sepia(78%) saturate(6061%) hue-rotate(243deg) brightness(91%) contrast(88%);
+        cursor: pointer;
+      }    
+  }
+  
+    p {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 18.75px;
+        margin-left: 10px;
+      }  
+      img {
+        width: 346px;
+        height: 231px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }   
+  }
+  
+  
+
+  
+
+  
