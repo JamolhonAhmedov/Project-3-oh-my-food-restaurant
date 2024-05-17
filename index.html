@@ -20,114 +20,141 @@
     ></script>
 
     <link rel="stylesheet" href="./css/index.css" />
+
     <title>Oh My food - London</title>
   </head>
   <body class="page-container">
     <header>
-      <div class="logo">
+      <div>
         <img
+          class="header-logo"
           src="./Images-and-text-Ohmyfood/images/logo/ohmyfood.png"
           alt="ohmyfood restaurant london"
         />
       </div>
-      <p id="islington"><i class="fas fa-location-dot"></i>Islington, London</p>
+      <p class="islington-p-tag">
+        <i class="fas fa-location-dot"></i>Islington, London
+      </p>
       <div class="header-section">
-        <h2 id="header-h2">Book the meal you want</h2>
-        <p>Discover our carefully selected high-end restaurants</p>
-        <a href="#">Explore our restaurants</a>
+        <h2 class="header-title">Book the meal you want</h2>
+        <p class="header-p-text">
+          Discover our carefully selected high-end restaurants
+        </p>
+        <a class="header-button" href="#">Explore our restaurants</a>
+
+        <!-- PAGE NAV SECTION -->
 
         <section class="nav-section">
-          <h2>How it works</h2>
-          <nav class="how-it-works-nav">
-            <div class="three-options">
-              <h2 class="one">1</h2>
+          <h2 class="nav-section-title">How it works</h2>
+          <nav class="nav-list-holder">
+            <div class="nav-single-option-holder">
+              <h2 class="nav-1-2-3-numbers">1</h2>
               <i class="fa-solid fa-mobile-screen-button"></i>
-              <p>Choose a restaurant</p>
+              <p class="nav-p-text">Choose a restaurant</p>
             </div>
 
-            <div class="three-options">
-              <h2 class="one">2</h2>
+            <div class="nav-single-option-holder">
+              <h2 class="nav-1-2-3-numbers">2</h2>
               <i class="fa-solid fa-list-ul"></i>
-              <p>Build your meal</p>
+              <p class="nav-p-text">Build your meal</p>
             </div>
 
-            <div class="three-options">
-              <h2 class="one">3</h2>
+            <div class="nav-single-option-holder">
+              <h2 class="nav-1-2-3-numbers">3</h2>
               <i class="fa-solid fa-store"></i>
-              <p>Enjoy your meal at the restaurant</p>
+              <p class="nav-p-text">Enjoy your meal at the restaurant</p>
             </div>
           </nav>
         </section>
       </div>
     </header>
+
+    <!-- MAIN SECTION -->
+
     <main>
-      <h2>Restaurants</h2>
+      <h2 class="main-section-title">Restaurants</h2>
 
-      <div class="restaurant-banner">
-        <div id="kitchen-west">
+      <div class="restaurant-all-banners-holder">
+        
+          <div class="restaurant-banner">
+            <img
+              class="restaurant-img"
+              src="./Images-and-text-Ohmyfood/images/restaurants/Kitchen-West.jpg"
+              alt="kitchen west restaurant in angel"
+            />
+            <a class="html-link-holder-a" href="./kitchen-west.html">
+            <button class="restaurant-new-button">New</button>
+            <h3 class="restaurant-banner-title">Kitchen West</h3>
+            <p class="restaurant-p-text">Angel</p>
+            <i class="fa-regular fa-heart"></i>
+
+            <!-- <i class="fa-solid fa-heart"></i> -->
+          </div>
+        </a>
+
+        <div class="restaurant-banner">
           <img
-            src="./Images-and-text-Ohmyfood/images/restaurants/Kitchen-West.jpg"
-            alt="kitchen west restaurant in angel"
-          />
-          <button class="new-button">New</button>
-          <h3>Kitchen West<i class="fa-solid fa-heart"></i></h3>
-
-          <!-- <i class="fa-solid fa-heart"></i> -->
-
-          <p>Angel</p>
-        </div>
-
-        <div id="elderflower">
-          <img
+            class="restaurant-img"
             src="./Images-and-text-Ohmyfood/images/restaurants/Elderflower.jpg"
             alt="elderflower restaurant in old street"
           />
-          <button class="new-button">New</button>
-          <h3>Elderflower<i class="fa-regular fa-heart"></i></h3>
-
-          <p>Old Street</p>
+          <a class="html-link-holder-a" href="./elderflower.html">
+          <button class="restaurant-new-button">New</button>
+          <h3 class="restaurant-banner-title">Elderflower</h3>
+          <p class="restaurant-p-text">Old Street</p>
+          <i class="fa-regular fa-heart"></i>
         </div>
+      </a>
 
-        <div id="shoreditch-canteen">
+        <div class="restaurant-banner">
           <img
+            class="restaurant-img"
             src="./Images-and-text-Ohmyfood/images/restaurants/Shoreditch-Canteen.jpg"
             alt="kitchen west restaurant in angel"
           />
-
-          <h3>Shoreditch Canteen<i class="fa-regular fa-heart"></i></h3>
-
-          <p>Shoreditch</p>
+          <a class="html-link-holder-a" href="./shoreditch-canteen.html">
+          <h3 class="restaurant-banner-title">Shoreditch Canteen</h3>
+          <p class="restaurant-p-text">Shoreditch</p>
+          <i class="fa-regular fa-heart"></i>
         </div>
+      </a>
 
-        <div id="bay-leaf">
+        <div class="restaurant-banner">
           <img
+            class="restaurant-img"
             src="./Images-and-text-Ohmyfood/images/restaurants/The-Bay-Leaf.jpg"
             alt="the bay leaf restaurant in hoxton"
           />
-          <!-- <button id="new-button">New</button> -->
-          <h3>The Bay Leaf<i class="fa-regular fa-heart"></i></h3>
-
-          <p>Hoxton</p>
+          <a class="html-link-holder-a" href="./bay-leaf.html">
+          <h3 class="restaurant-banner-title">The Bay Leaf</h3>
+          <p class="restaurant-p-text">Hoxton</p>
+          <i class="fa-regular fa-heart"></i>
         </div>
+      </a>
       </div>
     </main>
-    <footer>
-      <img
-        src="./Images-and-text-Ohmyfood/images/logo/ohmyfood.png"
-        alt="oh my food restaurant logo"
-      />
 
-      <a href="#"
+    <!-- FOOTER SECTION -->
+
+    <footer>
+      <a href="./index.html">
+        <img
+          class="footer-logo-img"
+          src="./Images-and-text-Ohmyfood/images/logo/ohmyfood.png"
+          alt="oh my food restaurant logo"
+      /></a>
+
+      <a class="footer-nav" href="#"
         ><span><i class="fa-solid fa-utensils"></i></span>Suggest a
         restaurant</a
       >
 
-      <a href="#"
+      <a class="footer-nav" href="#"
         ><span><i class="fa-solid fa-handshake-angle"></i></span>Become a
         partner</a
       >
-      <a href="#">Legal notice</a>
-      <a href="#">Contact</a>
+      <a class="footer-nav" href="#">Legal notice</a>
+      <a class="footer-nav" href="#">Contact</a>
     </footer>
   </body>
 </html>

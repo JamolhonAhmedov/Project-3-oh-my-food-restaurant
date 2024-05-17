@@ -1,7 +1,8 @@
 // PROJECT THEME COLORS PALETTE
-$primary-purple: #9356DC; 
-// $primary-purple: red; 
-$secondary: #FF79DA; 
+$primary-purple: #9356DC;
+$color-dark-purple: #6521b9;
+$color-light-purple: #b47cf8;
+$secondary: #FF79DA;
 $tertiary: #99E2D0;
 $colors-blue: #003A68;
 $colors-light-blue: #89C8FA;
@@ -14,6 +15,7 @@ $grey-font: #353535;
 $white-bg: #fff;
 $white-font: #fff;
 $black-font: #000;
+$i-symbol-color: #7e7e7e;
 
 // PROJECT FONT SIZES
 $h2-font-size: 24px;
@@ -28,4 +30,5 @@ $p-font-size: 17px;
 $p-font-weight: 300;
 $p-line-height: 18.75px;
 
-$base-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+$hover-box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
+$base-box-shadow: 0 5px 1px rgba(0, 0, 0, 0.4);

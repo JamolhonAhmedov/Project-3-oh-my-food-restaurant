@@ -19,19 +19,20 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="./css/style-menu-shoreditch-canteen.css" />
+    <link rel="stylesheet" href="./css/restaurant-menu-page-style.css" />
     <title>Oh My Food - Shoreditch Canteen Menu</title>
   </head>
   <body class="page-container">
     <header>
       <div class="logo">
-        <a href="./index.html"> <i class="fa-solid fa-arrow-left"></i></a>
+        <i class="fa-solid fa-arrow-left"></i>
+        <!-- <a href="./index.html"></a> -->
         <img
           src="./Images-and-text-Ohmyfood/images/logo/ohmyfood.png"
           alt="ohmyfood restaurant london"
         />
       </div>
-      <div class="kitchen-west-image">
+      <div class="restaurant-banner-image">
         <img
           src="./Images-and-text-Ohmyfood/images/restaurants/Shoreditch-Canteen.jpg"
           alt=""
@@ -39,76 +40,85 @@
       </div>
     </header>
 
-    <main class="main-div">
-      <h1>Shoreditch Canteen<i class="fa-regular fa-heart"></i></h1>
+    <main class="page-main-section-div">
+      <h1 class="page-title">Shoreditch Canteen</h1>
+      <i class="fa-regular fa-heart"></i>
 
       <!-- STARTERS MENU HERE -->
 
-      <div id="starters-div">
-        <h2>Starters</h2>
+      <div class="starters-main-div">
+        <h2 class="starter-section-title">Starters</h2>
+
         <div class="underline-div"></div>
 
         <div class="starter-banner animation animation-1">
-          <h3>Tangy octopus tartare</h3>
-          <p id="octopus-p">With orange zest<span>£25</span></p>
+          <h3 class="starter-menu-item-title">Tangy octopus tartare</h3>
+          <p class="starter-menu-item-p-text">With orange zest</p>
+          <p class="starter-menu-item-price">£25</p>
         </div>
 
         <div class="starter-banner animation animation-1">
-          <h3>Cream of root vegetable soup</h3>
-          <p id="veg-soup-p">
-            Carrot, parsnip, Jerusalem artichoke<span>£35</span>
+          <h3 class="starter-menu-item-title">Cream of root vegetable soup</h3>
+          <p class="starter-menu-item-p-text">
+            Carrot, parsnip, Jerusalem artichoke
           </p>
+          <p class="starter-menu-item-price">£35</p>
         </div>
 
         <div class="starter-banner animation animation-1">
-          <h3>French onion soup</h3>
-          <p id="french-soup-p">With cheesy croutons<span>£20</span></p>
+          <h3 class="starter-menu-item-title">French onion soup</h3>
+          <p class="starter-menu-item-p-text">With cheesy croutons</p>
+          <p class="starter-menu-item-price">£20</p>
         </div>
       </div>
 
       <!-- MAINS MENU -->
 
-      <div id="mains-div">
-        <h2>Mains</h2>
+      <div class="main-section-menu-list-div">
+        <h2 class="mains-section-title">Mains</h2>
         <div class="underline-div"></div>
 
         <div class="mains-banner animation animation-1">
-          <h3>Scallops</h3>
-          <p id="scallops-p">With parsnip purée<span>£40</span></p>
+          <h3 class="main-item-title">Scallops</h3>
+          <p class="main-item-p-text">With parsnip purée</p>
+          <p class="main-menu-item-price">£40</p>
         </div>
 
         <div class="mains-banner animation animation-1">
-          <h3>Pan-fried duck breast</h3>
-          <p id="duck-p">With crushed potatoes<span>£35</span></p>
+          <h3 class="main-item-title">Pan-fried duck breast</h3>
+          <p class="main-item-p-text">With crushed potatoes</p>
+          <p class="main-menu-item-price">£35</p>
         </div>
 
         <div class="mains-banner animation animation-1">
-          <h3>Roasted pigeon</h3>
-          <p id="pigeon-p">Served on gnocchi and vegetables<span>£44</span></p>
+          <h3 class="main-item-title">Roasted pigeon</h3>
+          <p class="main-item-p-text">Served on gnocchi and vegetables</p>
+          <p class="main-menu-item-price">£44</p>
         </div>
       </div>
 
       <!-- DESSERTS MENU -->
 
-      <div id="desserts-div">
-        <h2>Desserts</h2>
+      <div class="desserts-section-div">
+        <h2 class="desserts-section-title">Desserts</h2>
         <div class="underline-div"></div>
 
         <div class="desserts-banner animation animation-1">
-          <h3>Forest fruit cheesecake</h3>
-          <p id="cheesecake-p">With blackcurrant sorbet<span>£18</span></p>
+          <h3 class="dessert-item-title">Forest fruit cheesecake</h3>
+          <p class="main-item-p-text">With blackcurrant sorbet</p>
+          <p class="dessert-menu-item-price">£18</p>
         </div>
 
         <div class="desserts-banner animation animation-1">
-          <h3>Chocolate fondant</h3>
-          <p id="chocolate-p">With clotted cream<span>£22</span></p>
+          <h3 class="dessert-item-title">Chocolate fondant</h3>
+          <p class="main-item-p-text">With clotted cream</p>
+          <p class="dessert-menu-item-price">£22</p>
         </div>
 
         <div class="desserts-banner animation animation-1">
-          <h3>Crispy millefeuille</h3>
-          <p id="millefeuille-p">
-            With blueberries and almonds<span>£23</span>
-          </p>
+          <h3 class="dessert-item-title">Crispy millefeuille</h3>
+          <p class="main-item-p-text">With blueberries and almonds</p>
+          <p class="dessert-menu-item-price">£23</p>
         </div>
       </div>
 
@@ -118,23 +128,26 @@
     </main>
 
     <!-- FOOTER SECTION -->
-    <footer>
-      <img
-        src="./Images-and-text-Ohmyfood/images/logo/ohmyfood.png"
-        alt="oh my food restaurant logo"
-      />
 
-      <a href="#"
+    <footer>
+      <a href="./index.html">
+        <img
+          class="footer-logo-img"
+          src="./Images-and-text-Ohmyfood/images/logo/ohmyfood.png"
+          alt="oh my food restaurant logo"
+      /></a>
+
+      <a class="footer-nav" href="#"
         ><span><i class="fa-solid fa-utensils"></i></span>Suggest a
         restaurant</a
       >
 
-      <a href="#"
+      <a class="footer-nav" href="#"
         ><span><i class="fa-solid fa-handshake-angle"></i></span>Become a
         partner</a
       >
-      <a href="#">Legal notice</a>
-      <a href="#">Contact</a>
+      <a class="footer-nav" href="#">Legal notice</a>
+      <a class="footer-nav" href="#">Contact</a>
     </footer>
   </body>
 </html>

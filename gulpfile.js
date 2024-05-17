@@ -12,3 +12,7 @@ function watchTask() {
 }
 
 exports.default = series(buildStyles, watchTask)
+
+
+// return src('saas/**/*.scss')
+// watch(['saas/**/*.scss'], buildStyles)
