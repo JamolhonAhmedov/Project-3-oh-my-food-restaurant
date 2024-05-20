@@ -1,3 +1,13 @@
+//IMPORTING VARIABLES AND FUNCTIONS
+@import "../saas/variables";
+
+// BASE AND LAYOUT
+
+
+// COLORS
+
+// COMPONENTS (BUTTONS, CARDS, NAVBAR)
+
 * {
   margin: 0;
   padding: 0;
@@ -17,19 +27,21 @@
   display: flex;
   flex-direction: row;
   margin: 0;
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: $white-bg;
+  border: 1px solid $white-bg;
   position: sticky;
   top: 0;
   border-bottom: 2px solid rgba(128, 128, 128, 0.462);
-}
-.header-logo-div .header-logo {
-  display: flex;
-  width: 162px;
-  margin: 20px auto;
-}
-.header-logo-div .header-logo:hover {
-  cursor: pointer;
+
+  .header-logo {
+    display: flex;
+    width: 162px;
+    margin: 20px auto;
+  }
+
+  .header-logo:hover {
+    cursor: pointer;
+  }
 }
 
 /* TOP LEFT ARROW */
@@ -42,7 +54,7 @@
 }
 
 .header-logo-div .fa-arrow-left:hover {
-  color: linear-gradient(#FF79DA, #9356DC);
+  color: $hart-symbol-color;
   cursor: pointer;
 }
 
@@ -63,17 +75,19 @@
   background-color: #F6F6F6;
   border-top-left-radius: 39px;
   border-top-right-radius: 39px;
-}
-.page-main-section-div .page-title {
-  color: #101010;
-  margin-top: 30px;
-  padding-left: 20px;
-  font-size: 28px;
-  font-weight: 300;
-  line-height: 40.82px;
-  font-family: "Shrikhand";
-  position: relative;
-  margin-bottom: 30px;
+
+
+  .page-title {
+    color: #101010;
+    margin-top: 30px;
+    padding-left: 20px;
+    font-size: $h1-font-size;
+    font-weight: $h1-font-weight;
+    line-height: $h1-line-height;
+    font-family: "Shrikhand";
+    position: relative;
+    margin-bottom: 30px;
+  }
 }
 
 .fa-regular.fa-heart {
@@ -84,8 +98,9 @@
 }
 
 .fa-regular.fa-heart:hover {
-  color: linear-gradient(#FF79DA, #9356DC);
+  color: $hart-symbol-color;
 }
+
 
 /* MENU AMINATION HERE */
 .animation {
@@ -121,59 +136,64 @@
 .starters-main-div {
   display: flex;
   flex-direction: column;
-}
-.starters-main-div .starter-section-title {
-  margin-left: 15px;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 18.75px;
+
+  .starter-section-title {
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: $h2-font-size;
+    font-weight: $h2-font-weight;
+    line-height: $h2-line-height;
+  }
 }
 
 .starter-banner {
   border-radius: 20px;
   margin: 10px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: $white-bg;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
-}
-.starter-banner .starter-menu-item-title {
-  margin-left: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21.09px;
-  padding: 5px 0;
-}
-.starter-banner .starter-menu-item-p-text {
-  margin-left: 10px;
-  font-size: 13.04px;
-  font-weight: 300;
-  line-height: 17.63px;
-}
-.starter-banner .starter-menu-item-price {
-  color: #000;
-  margin-left: 40px;
-  font-size: 13.04px;
-  font-weight: 500;
-  line-height: 17.63px;
-  position: absolute;
-  top: 40px;
-  right: 20px;
+
+  .starter-menu-item-title {
+    margin-left: 10px;
+    font-size: $h3-font-size;
+    font-weight: $h3-font-weight + 200;
+    line-height: $h3-line-height;
+    padding: 5px 0;
+  }
+
+  .starter-menu-item-p-text {
+    margin-left: 10px;
+    font-size: $p-font-size - 2px;
+    font-weight: $p-font-weight;
+    line-height: $p-line-height;
+  }
+
+  .starter-menu-item-price {
+    color: $black-font;
+    margin-left: 40px;
+    font-size: $p-font-size - 2px;
+    font-weight: $p-font-weight + 200;
+    line-height: $p-line-height;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
 }
 
 /* MAINS MENU SECTION HERE */
 .main-section-menu-list-div {
   display: flex;
   flex-direction: column;
-}
-.main-section-menu-list-div .mains-section-title {
-  margin-top: 30px;
-  margin-left: 15px;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 18.75px;
+
+  .mains-section-title {
+    margin-top: 30px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: $h2-font-size;
+    font-weight: $h2-font-weight;
+    line-height: $h2-line-height;
+  }
 }
 
 .mains-banner {
@@ -183,43 +203,47 @@
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
-}
-.mains-banner .main-item-title {
-  margin-left: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21.09px;
-  padding: 5px 0;
-}
-.mains-banner .main-item-p-text {
-  margin-left: 10px;
-  font-size: 15.04px;
-  font-weight: 300;
-  line-height: 17.63px;
-}
-.mains-banner .main-menu-item-price {
-  color: #000;
-  margin-left: 95px;
-  font-size: 15.04px;
-  font-weight: 300;
-  line-height: 17.63px;
-  position: absolute;
-  top: 40px;
-  right: 20px;
+
+  .main-item-title {
+    margin-left: 10px;
+    font-size: $h3-font-size;
+    font-weight: $h3-font-weight + 200;
+    line-height: $h3-line-height;
+    padding: 5px 0;
+  }
+
+  .main-item-p-text {
+    margin-left: 10px;
+    font-size: $p-font-size;
+    font-weight: $p-font-weight;
+    line-height: $p-line-height;
+  }
+
+  .main-menu-item-price {
+    color: $black-font;
+    margin-left: 95px;
+    font-size: $p-font-size;
+    font-weight: $p-font-weight;
+    line-height: $p-line-height;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
 }
 
 /* DESSERT MENU HERE */
 .desserts-section-div {
   display: flex;
   flex-direction: column;
-}
-.desserts-section-div .desserts-section-title {
-  margin-left: 15px;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 18.75px;
-  margin-top: 30px;
+
+  .desserts-section-title {
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: $h2-font-size;
+    font-weight: $h2-font-weight;
+    line-height: $h2-line-height;
+    margin-top: 30px;
+  }
 }
 
 .underline-div {
@@ -236,29 +260,33 @@
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
-}
-.desserts-banner .dessert-item-title {
-  margin-left: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21.09px;
-  padding: 5px 0;
-}
-.desserts-banner .main-item-p-text {
-  margin-left: 10px;
-  font-size: 15.04px;
-  font-weight: 300;
-  line-height: 17.63px;
-}
-.desserts-banner .dessert-menu-item-price {
-  color: #353535;
-  margin-left: 120px;
-  font-size: 15.04px;
-  font-weight: 300;
-  line-height: 17.63px;
-  position: absolute;
-  top: 40px;
-  right: 20px;
+
+
+  .dessert-item-title {
+    margin-left: 10px;
+    font-size: $h3-font-size;
+    font-weight: $h3-font-weight + 200;
+    line-height: $h3-line-height;
+    padding: 5px 0;
+  }
+
+  .main-item-p-text {
+    margin-left: 10px;
+    font-size: $p-font-size;
+    font-weight: $p-font-weight;
+    line-height: $p-line-height;
+  }
+
+  .dessert-menu-item-price {
+    color: #353535;
+    margin-left: 120px;
+    font-size: $p-font-size;
+    font-weight: $p-font-weight;
+    line-height: $p-line-height;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
 }
 
 /* ORDER BUTTON HERE */
@@ -289,6 +317,7 @@
   transition: ease-in-out 0.3s;
 }
 
+
 /* FOOTER SECTION */
 footer {
   display: flex;
@@ -298,32 +327,37 @@ footer {
   margin: 0 auto;
   width: 375px;
   background-color: #353535;
+
+  .footer-logo-img {
+    width: 137.18px;
+    height: 27px;
+    margin: 20px 20px;
+    filter: invert(100%) sepia(0%) saturate(7493%) hue-rotate(150deg) brightness(105%) contrast(104%);
+  }
+
+  .footer-nav {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-decoration: none;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
   /* FOOTER SYMBOLS */
-}
-footer .footer-logo-img {
-  width: 137.18px;
-  height: 27px;
-  margin: 20px 20px;
-  filter: invert(100%) sepia(0%) saturate(7493%) hue-rotate(150deg) brightness(105%) contrast(104%);
-}
-footer .footer-nav {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18.75px;
-  text-decoration: none;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-}
-footer .footer-nav i {
-  padding-right: 15px;
-}
-footer .fa-solid.fa-handshake-angle {
-  color: #fff;
-}
-footer .fa-solid.fa-utensils {
-  color: #fff;
+  .footer-nav i {
+    padding-right: 15px;
+  }
+
+  .fa-solid.fa-handshake-angle {
+    color: #fff;
+  }
+
+  .fa-solid.fa-utensils {
+    color: #fff;
+  }
 }
 
 /* @ MEDIA 1440 PX */
@@ -335,10 +369,12 @@ footer .fa-solid.fa-utensils {
     min-width: 1440px;
     margin: 0 auto;
   }
+
   .page-main-section-div .page-title {
     display: flex;
     justify-content: center;
   }
+
   .restaurant-banner-image img {
     -o-object-fit: cover;
     object-fit: cover;
@@ -347,6 +383,7 @@ footer .fa-solid.fa-utensils {
     -o-object-position: 100% 60%;
     object-position: 100% 60%;
   }
+
   .page-main-section-div {
     position: relative;
     top: -40px;
@@ -356,16 +393,21 @@ footer .fa-solid.fa-utensils {
     background-color: #F6F6F6;
     border-top-left-radius: 39px;
     border-top-right-radius: 39px;
+
+    .page-title {
+      position: relative;
+    }
   }
-  .page-main-section-div .page-title {
-    position: relative;
-  }
+
+
+
   .fa-regular.fa-heart {
     position: absolute;
     left: 700px;
     top: 40px;
     font-size: 30px;
   }
+
   .starters-main-div,
   .main-section-menu-list-div,
   .desserts-section-div {
@@ -374,6 +416,7 @@ footer .fa-solid.fa-utensils {
     width: 634px;
     margin: 0 auto;
   }
+
   /* AMINATION */
   .animation::before {
     content: "";
@@ -388,6 +431,7 @@ footer .fa-solid.fa-utensils {
     transform-origin: 0 0;
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
   }
+
   /* FOOTER */
   footer {
     display: flex;
@@ -402,12 +446,15 @@ footer .fa-solid.fa-utensils {
     padding-top: 30px;
     padding-right: 300px;
     margin-top: 35px;
-  }
-  footer .footer-logo-img {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left: 800px;
-    margin-bottom: 40px;
+
+    .footer-logo-img {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      left: 800px;
+      margin-bottom: 40px;
+    }
   }
 }
+
+/*# sourceMappingURL=restaurant-menu-page-style.css.map */

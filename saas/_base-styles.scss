@@ -13,10 +13,18 @@
     margin: 0 auto;
 }
 
+.header-logo-div {
+    background-color: #fff;
+    border: 1px solid #fff;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.462);
+}
+
 .header-logo {
     display: flex;
     width: 162px;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 header .islington-p-tag {
@@ -149,15 +157,15 @@ header .islington-p-tag {
 
 main {
     background-color: $page-light-grey-bg;
-}
 
-main .main-section-title {
-    font-size: $h2-font-size;
-    font-weight: $h2-font-weight;
-    line-height: $h2-line-height;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    margin-left: 15px;
+    .main-section-title {
+        font-size: $h2-font-size;
+        font-weight: $h2-font-weight;
+        line-height: $h2-line-height;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
 }
 
 .restaurant-all-banners-holder {
@@ -225,36 +233,40 @@ main .main-section-title {
     filter: invert(61%) sepia(78%) saturate(6061%) hue-rotate(243deg) brightness(91%) contrast(88%);
     cursor: pointer;
     font-weight: 600;
-    // color: linear-gradient($primary-purple, $secondary);
 }
 
-.restaurant-banner .fa-regular.fa-heart {
-    font-size: 30px;
+
+.restaurant-banner {
+    .fa-regular.fa-heart {
+        font-size: 30px;
+    }
+
+
+    .restaurant-banner-title {
+        font-size: $h3-font-size;
+        font-weight: $h3-font-weight;
+        line-height: $h3-line-height;
+        margin-left: 10px;
+        padding: 10px 0;
+    }
+
+    .restaurant-p-text {
+        font-size: $p-font-size;
+        font-weight: $p-font-weight;
+        line-height: $p-line-height;
+        margin-left: 10px;
+    }
+
+    .restaurant-img {
+        object-fit: cover;
+        width: 346px;
+        height: 231px;
+        object-position: 100% 60%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
 }
 
-.restaurant-banner .restaurant-banner-title {
-    font-size: $h3-font-size;
-    font-weight: $h3-font-weight;
-    line-height: $h3-line-height;
-    margin-left: 10px;
-    padding: 10px 0;
-}
-
-.restaurant-banner .restaurant-p-text {
-    font-size: $p-font-size;
-    font-weight: $p-font-weight;
-    line-height: $p-line-height;
-    margin-left: 10px;
-}
-
-.restaurant-banner .restaurant-img {
-    object-fit: cover;
-    width: 346px;
-    height: 231px;
-    object-position: 100% 60%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
 
 // FOOTER SECTION
 
@@ -287,19 +299,21 @@ footer {
     .footer-nav:hover {
         text-decoration: underline;
     }
+
+    .footer-nav i {
+        padding-right: 15px;
+    }
+
+    .fa-solid.fa-handshake-angle {
+        color: $white-font;
+    }
+
+    .fa-solid.fa-utensils {
+        color: $white-font;
+    }
 }
 
-footer .footer-nav i {
-    padding-right: 15px;
-}
 
-.fa-solid.fa-handshake-angle {
-    color: $white-font;
-}
-
-.fa-solid.fa-utensils {
-    color: $white-font;
-}
 
 // MEDIA QUARIES
 
@@ -322,6 +336,10 @@ footer .footer-nav i {
         padding: 10px 195px;
         padding-bottom: 20px;
         width: 100%;
+
+        .nav-section-title {
+            padding-left: 11%;
+        }
     }
 
     .nav-list-holder {
@@ -336,9 +354,7 @@ footer .footer-nav i {
         justify-content: center;
     }
 
-    .nav-section .nav-section-title {
-        padding-left: 11%;
-    }
+
 
     // MAIN AREA - RESTAURANT BANNERS
 

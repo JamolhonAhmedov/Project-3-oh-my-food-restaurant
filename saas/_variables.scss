@@ -17,7 +17,16 @@ $white-font: #fff;
 $black-font: #000;
 $i-symbol-color: #7e7e7e;
 
-// PROJECT FONT SIZES
+$hart-symbol-color: linear-gradient(#FF79DA, #9356DC);
+
+$hover-box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
+$base-box-shadow: 0 5px 1px rgba(0, 0, 0, 0.4);
+
+// INDEX PAGE FONT SIZES
+$h1-font-size: 28px;
+$h1-font-weight: 400;
+$h1-line-height: 40.82px;
+
 $h2-font-size: 24px;
 $h2-font-weight: 700;
 $h2-line-height: 28.13px;
@@ -30,5 +39,24 @@ $p-font-size: 17px;
 $p-font-weight: 300;
 $p-line-height: 18.75px;
 
-$hover-box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
-$base-box-shadow: 0 5px 1px rgba(0, 0, 0, 0.4);
+// RESTAURANT PAGE FONT SIZES
+
+//PAGE MAIL TILE FONT SIZE
+$h1-font-size: 28px;
+$h1-font-weight: 300;
+$h1-line-height: 40.82px;
+
+//SECTION MAIN TITLE FONT SIZE (STARTER, MAIN & DESSERTS) 
+$h2-font-size: 16px;
+$h2-font-weight: 300;
+$h2-line-height: 18.75px;
+
+//MEAL NAME FONT SIZE
+$h3-font-size: 18px;
+$h3-font-weight: 500;
+$h3-line-height: 21.09px;
+
+//MEAL DESCRIPTION AND PRICE FONT SIZE
+$p-font-size: 15.04px;
+$p-font-weight: 300;
+$p-line-height: 17.63px;
