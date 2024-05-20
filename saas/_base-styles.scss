@@ -5,6 +5,15 @@
     font-family: "Roboto";
 }
 
+#preloader {
+    background: #fff url("../Images-and-text-Ohmyfood/images/preloader.gif") no-repeat center center;
+    background-size: 60%;
+    width: 28%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+
 .page-container {
     display: flex;
     flex-direction: column;
@@ -448,4 +457,14 @@ footer {
             margin-bottom: 40px;
         }
     }
+
+    #preloader {
+        background: #fff url("../Images-and-text-Ohmyfood/images/preloader.gif") no-repeat center center;
+        background-size: 20%;
+        width: 68%;
+        height: 100vh;
+        position: fixed;
+        z-index: 100;
+    }
+
 }

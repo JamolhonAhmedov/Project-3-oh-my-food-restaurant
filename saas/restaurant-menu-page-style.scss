@@ -360,6 +360,15 @@ footer {
   }
 }
 
+#preloader {
+  background-color: #000 url(../Images-and-text-Ohmyfood/images/preloader.gif) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
+
+
 /* @ MEDIA 1440 PX */
 @media all and (min-width: 1440px) {
   .page-container {
