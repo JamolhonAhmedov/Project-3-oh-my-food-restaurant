@@ -23,15 +23,8 @@
     <title>Oh My Food - Shoreditch Canteen Menu</title>
   </head>
   <body class="page-container">
+    <div id="preloader"></div>
     <header>
-      <!-- <div class="header-logo-div">
-        <img
-          class="header-logo"
-          src="./Images-and-text-Ohmyfood/images/logo/ohmyfood.png"
-          alt="ohmyfood restaurant london"
-        />
-      </div> -->
-
       <div class="header-logo-div">
         <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <img
@@ -158,5 +151,40 @@
       <a class="footer-nav" href="#">Legal notice</a>
       <a class="footer-nav" href="#">Contact</a>
     </footer>
+    <!-- PRE-LOADER -->
+
+    <script>
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+
+    // MUSIC VIDEO FOR PRE-LOADER
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/XdBZdZIHaLI?si=_up9wCGfkcwsm4V1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/XdBZdZIHaLI?si=_up9wCGfkcwsm4V1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <!-- END OF PRE-LOADER -->
   </body>
 </html>
