@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+#preloader {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background: #fff url("../Images-and-text-Ohmyfood/images/preloader.gif") no-repeat center center;
+    background-size: 50%;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+.preloader-img {
+    display: none;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid red;
+    width: 375px;
+    margin: 0 auto;
+}
+
+.header-logo-div {
+    background-color: #fff;
+    border: 1px solid #fff;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.462);
+}
+
+.header-logo {
+    display: flex;
+    width: 162px;
+    margin: 15px auto;
+}
+
+header .islington-p-tag {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    color: $grey-font;
+    text-align: center;
+    padding: 20px 0;
+    background-color: $header-light-grey;
+    box-shadow: inset 0 0 5px #878787;
+
+    i {
+        margin-right: 20px;
+    }
+
+}
+
+.header-section {
+    background-color: $page-light-grey-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    h2.header-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: $h2-line-height;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .header-p-text {
+        font-size: $p-font-size;
+        font-weight: $p-font-weight;
+        line-height: $p-line-height;
+        text-align: center;
+        color: $grey-font;
+        margin: 20px 0;
+    }
+}
+
+.header-section .header-button {
+    color: $white-font;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18.75px;
+    border-radius: 39px;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-image: linear-gradient($secondary, $primary-purple);
+    box-shadow: $base-box-shadow;
+    margin-bottom: 40px;
+    transition: ease 0.3s;
+}
+
+.header-section .header-button:hover {
+    font-size: 20px;
+    font-weight: 500;
+    background-image: linear-gradient($primary-purple, $secondary);
+    box-shadow: $hover-box-shadow;
+    transition: ease 0.3s;
+}
+
+// NAVIGATION SECTION
+
+.nav-section {
+    background-color: $white-bg;
+    padding: 20px 25px;
+    padding-bottom: 40px;
+
+    .nav-section-title {
+        font-size: $h2-font-size;
+        font-weight: $h2-font-weight;
+        line-height: $h2-line-height;
+        margin: 25px 0;
+    }
+}
+
+.nav-list-holder .nav-single-option-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: $base-box-shadow;
+    width: 322.49px;
+    height: 72.38px;
+    margin-bottom: 20px;
+    gap: 40px;
+    background-color: $page-light-grey-bg;
+
+    i {
+        margin-right: -15px;
+        color: $i-symbol-color;
+        font-size: 22px;
+    }
+}
+
+
+
+.nav-single-option-holder .nav-p-text {
+    font-size: $p-font-size;
+    font-weight: $p-font-weight;
+    line-height: $p-line-height;
+}
+
+.nav-1-2-3-numbers {
+    margin: 0 -15px;
+    border-radius: 50px;
+    padding: 8px 13px;
+    background-color: $primary-purple;
+    color: $white-font;
+    font-size: 14.18px;
+    font-weight: 500;
+    line-height: 16.62px;
+    transition: ease 0.3s;
+}
+
+.nav-1-2-3-numbers:hover {
+    padding: 10px 15px;
+    transition: ease 0.3s;
+    background-color: $color-dark-purple;
+    box-shadow: $hover-box-shadow;
+}
+
+
+// MAIN SECTION - RESTAURANT 4 BANNERS
+
+main {
+    background-color: $page-light-grey-bg;
+
+    .main-section-title {
+        font-size: $h2-font-size;
+        font-weight: $h2-font-weight;
+        line-height: $h2-line-height;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+}
+
+.restaurant-all-banners-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant-banner .html-link-holder-a {
+    text-decoration: none;
+    color: $black-font;
+}
+
+.restaurant-banner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    background-color: $white-bg;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.restaurant-banner:hover {
+    box-shadow: $hover-box-shadow;
+    transition: ease 0.5s;
+}
+
+.restaurant-new-button {
+    display: inline-block;
+    position: absolute;
+    color: $colors-green;
+    background-color: $tertiary;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 29px;
+    top: 20px;
+    left: 250px;
+    transition: ease 0.4s;
+}
+
+.restaurant-new-button:hover {
+    color: $white-font;
+    font-size: 18px;
+    transition: ease 0.4s;
+    box-shadow: $hover-box-shadow;
+}
+
+
+.restaurant-banner i {
+    position: relative;
+    color: $grey-font;
+    top: -45px;
+    left: 300px;
+}
+
+.restaurant-banner i:hover {
+    filter: invert(61%) sepia(78%) saturate(6061%) hue-rotate(243deg) brightness(91%) contrast(88%);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.restaurant-banner {
+    .fa-regular.fa-heart {
+        font-size: 30px;
+    }
+
+
+    .restaurant-banner-title {
+        font-size: $h3-font-size;
+        font-weight: $h3-font-weight;
+        line-height: $h3-line-height;
+        margin-left: 10px;
+        padding: 10px 0;
+    }
+
+    .restaurant-p-text {
+        font-size: $p-font-size;
+        font-weight: $p-font-weight;
+        line-height: $p-line-height;
+        margin-left: 10px;
+    }
+
+    .restaurant-img {
+        object-fit: cover;
+        width: 346px;
+        height: 231px;
+        object-position: 100% 60%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+
+
+// FOOTER SECTION
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    background-color: $footer-color;
+
+    .footer-logo-img {
+        width: 137.18px;
+        height: 27px;
+        margin: 20px 20px;
+        filter: invert(100%) sepia(0%) saturate(7493%) hue-rotate(150deg) brightness(105%) contrast(104%);
+    }
+
+
+    .footer-nav {
+        color: $white-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+        text-decoration: none;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    .footer-nav:hover {
+        text-decoration: underline;
+    }
+
+    .footer-nav i {
+        padding-right: 15px;
+    }
+
+    .fa-solid.fa-handshake-angle {
+        color: $white-font;
+    }
+
+    .fa-solid.fa-utensils {
+        color: $white-font;
+    }
+}
+
+
+
+// MEDIA QUARIES
+
+@media all and (min-width: 1440px) {
+
+    .page-container {
+        // border: 1px solid green;
+        min-width: 1440px;
+    }
+
+    h2.header-title {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .nav-section {
+        display: flex;
+        flex-direction: column;
+        background-color: $white-bg;
+        padding: 10px 195px;
+        padding-bottom: 20px;
+        width: 100%;
+
+        .nav-section-title {
+            padding-left: 11%;
+        }
+    }
+
+    .nav-list-holder {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        gap: 40px;
+        border-radius: 20px;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    // MAIN AREA - RESTAURANT BANNERS
+
+    main .main-section-title {
+        margin-bottom: 40px;
+        margin-left: 165px;
+    }
+
+    .restaurant-all-banners-holder {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .restaurant-banner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: $white-bg;
+        width: 490px;
+        height: 320px;
+        transition: ease 0.5s;
+    }
+
+
+    .restaurant-banner:hover {
+        box-shadow: $base-box-shadow;
+        transition: ease 0.5s;
+    }
+
+    .restaurant-banner .restaurant-img {
+        object-fit: cover;
+        height: 231px;
+        width: 100%;
+        object-position: 100% 60%;
+    }
+
+    .restaurant-banner .restaurant-banner-title {
+        font-size: $h3-font-size;
+        font-weight: $h3-font-weight;
+        line-height: $h3-line-height;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+
+
+    .restaurant-banner i {
+        position: relative;
+        color: $grey-font;
+        top: -45px;
+        left: 420px;
+    }
+
+    .restaurant-banner .restaurant-p-text {
+        font-size: $p-font-size;
+        font-weight: $p-font-weight;
+        line-height: $p-line-height;
+        margin-left: 20px;
+    }
+
+    .restaurant-new-button {
+        position: absolute;
+        top: 20px;
+        left: 380px;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: end;
+        align-items: center;
+        background-color: $footer-color;
+        padding-bottom: 10px;
+        padding-top: 50px;
+        padding-right: 200px;
+
+        .footer-logo-img {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            left: 750px;
+            margin-bottom: 40px;
+        }
+    }
+
+    #preloader {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        background: #fff url("../Images-and-text-Ohmyfood/images/preloader.gif") no-repeat center center;
+        background-size: 30%;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+    }
+
+}
