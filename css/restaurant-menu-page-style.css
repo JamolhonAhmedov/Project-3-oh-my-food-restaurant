@@ -33,13 +33,13 @@
 .header-logo-div {
   display: flex;
   flex-direction: row;
-  margin: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   background-color: #fff;
   border: 1px solid #fff;
   position: sticky;
-  top: 0;
   border-bottom: 2px solid rgba(128, 128, 128, 0.462);
-  border: 2px solid red;
 }
 
 .header-logo {
@@ -59,15 +59,11 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  z-index: 1;
-  color: red;
 }
 
 .header-logo-div .fa-arrow-left:hover {
-  color: linear-gradient(#FF79DA, #9356DC);
+  color: #9356DC;
   cursor: pointer;
-  z-index: 2;
-  color: blue;
 }
 
 .restaurant-banner-image img {
