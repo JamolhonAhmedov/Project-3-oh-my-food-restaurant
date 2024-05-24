@@ -40,18 +40,16 @@
   display: none;
 }
 
-
 .header-logo-div {
   display: flex;
   flex-direction: row;
-  margin: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   background-color: $white-bg;
   border: 1px solid $white-bg;
   position: sticky;
-  top: 0;
   border-bottom: 2px solid rgba(128, 128, 128, 0.462);
-  border: 2px solid red;
-
 }
 
 .header-logo {
@@ -64,8 +62,6 @@
   cursor: pointer;
 }
 
-
-
 /* TOP LEFT ARROW */
 .header-logo-div .fa-solid,
 .fa-arrow-left {
@@ -73,15 +69,11 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  z-index: 1;
-  color: red;
 }
 
 .header-logo-div .fa-arrow-left:hover {
-  color: $hart-symbol-color;
+  color: $primary-purple;
   cursor: pointer;
-  z-index: 2;
-  color: blue;
 }
 
 .restaurant-banner-image img {
