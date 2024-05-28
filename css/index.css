@@ -21,6 +21,28 @@
   animation: fadeOut 1s 2s forwards;
 }
 
+.big-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-circle::after {
+  content: "";
+  width: 300px;
+  height: 300px;
+  border: 0px solid rgba(221, 221, 221, 0.8666666667);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: outer-ring 2s linear infinite;
+  border-top-width: 20px;
+}
+
 .ring {
   width: 200px;
   height: 200px;
@@ -51,10 +73,19 @@
   animation: text-color 0.8s ease-in-out infinite alternate;
 }
 
-.fader {
+.preloader-fader {
   opacity: 1;
+  visibility: visible;
 }
 
+@keyframes outer-ring {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
 @keyframes rotate1 {
   0% {
     transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
@@ -89,8 +120,8 @@
 }
 @keyframes fadeOut {
   100% {
-    opacity: 0;
     display: none;
+    opacity: 0;
   }
 }
 .page-container {
