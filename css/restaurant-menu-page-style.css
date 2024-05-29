@@ -54,7 +54,6 @@
   object-fit: cover;
   height: 275px;
   width: 100%;
-  -o-object-position: 100% 80%;
   object-position: 100% 80%;
 }
 
@@ -98,6 +97,37 @@
   overflow: hidden;
 }
 
+.checkbox-div {
+  position: absolute;
+  top: 20px;
+  transform: translateX(390px);
+  width: 30px;
+  height: 30px;
+  transition: ease 0.3s;
+  opacity: 0;
+  display: none;
+}
+
+.animation:hover .checkbox-div {
+  transform: translateX(305px);
+  transition: ease 0.3s;
+  visibility: none;
+  opacity: 0;
+}
+
+label span {
+  display: block;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #fff;
+  transform: translateX(380px);
+  transition: ease 0.3s;
+}
+
 .animation::before {
   content: "";
   position: absolute;
@@ -112,6 +142,27 @@
   transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 
+label span::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 6px;
+  width: 0;
+  height: 0;
+  border: solid #99E2D0;
+  border-width: 0 6px 6px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: ease 0.3s;
+}
+
+input:checked ~ span::after {
+  opacity: 1;
+  width: 6px;
+  height: 14px;
+  transition: ease 0.3s;
+}
+
 .animation-1::before {
   transform: scaleX(0);
 }
@@ -121,17 +172,22 @@
 }
 
 .animation-1:hover .starter-menu-item-price {
-  transform: translateX(-50px);
+  transform: translateX(-55px);
   transition: ease 0.3s;
 }
 
 .animation-1:hover .main-menu-item-price {
-  transform: translateX(-50px);
+  transform: translateX(-55px);
   transition: ease 0.3s;
 }
 
 .animation-1:hover .dessert-menu-item-price {
-  transform: translateX(-50px);
+  transform: translateX(-55px);
+  transition: ease 0.3s;
+}
+
+.animation-1:hover label span {
+  transform: translateX(308px);
   transition: ease 0.3s;
 }
 
@@ -419,6 +475,12 @@ footer .fa-solid.fa-utensils {
     transition: transform 0.5s;
     transform-origin: 0 0;
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  }
+  label span {
+    transform: translateX(620px);
+  }
+  .animation-1:hover label span {
+    transform: translateX(565px);
   }
   /* FOOTER */
   footer {
