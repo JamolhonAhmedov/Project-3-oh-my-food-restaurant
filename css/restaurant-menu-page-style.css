@@ -241,6 +241,10 @@ input:checked ~ span::after {
   transition: ease 0.5s;
 }
 
+.starter-banner:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 /* MAINS MENU SECTION HERE */
 .main-section-menu-list-div {
   display: flex;
@@ -290,6 +294,10 @@ input:checked ~ span::after {
   padding-top: 40px;
   padding-bottom: 9px;
   transition: ease 0.5s;
+}
+
+.mains-banner:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* DESSERT MENU HERE */
@@ -350,6 +358,10 @@ input:checked ~ span::after {
   transition: ease 0.5s;
 }
 
+.desserts-banner:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 /* ORDER BUTTON HERE */
 .order-btn {
   display: flex;
@@ -374,7 +386,8 @@ input:checked ~ span::after {
 
 .order-btn:hover {
   cursor: pointer;
-  box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(#fa98df, #9f6adf);
+  box-shadow: 0 10px 5px 2px rgba(0, 0, 0, 0.4);
   transition: ease-in-out 0.3s;
 }
 

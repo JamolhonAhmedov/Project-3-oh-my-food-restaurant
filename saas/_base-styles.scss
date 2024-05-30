@@ -5,22 +5,6 @@
     font-family: "Roboto";
 }
 
-@media (hover: hover) {
-    body {
-        background-color: red;
-    }
-}
-
-
-@media (hover: none) {
-    body {
-        background-color: yellow;
-    }
-}
-
-
-body {}
-
 // PRE-LOADER
 
 .preloader-container {
@@ -96,6 +80,8 @@ body {}
     opacity: 1;
     visibility: visible;
 }
+
+// PRELOADER ANIMATION
 
 @keyframes outer-ring {
     from {
@@ -255,14 +241,16 @@ header .islington-p-tag {
     box-shadow: $base-box-shadow;
     margin-bottom: 40px;
     transition: ease 0.3s;
+    width: 215px;
+    text-align: center;
 }
 
 .header-section .header-button:hover {
-    font-size: 20px;
-    font-weight: 500;
-    background-image: linear-gradient($primary-purple, $secondary);
+    background-image: linear-gradient($secondary-lighter, $primary-purple-lighter);
     box-shadow: $hover-box-shadow;
+    width: 225px;
     transition: ease 0.3s;
+    text-align: center;
 }
 
 
@@ -493,6 +481,31 @@ footer {
     h2.header-title {
         font-size: 40px;
         font-weight: 700;
+    }
+
+
+    .header-section .header-button {
+        color: $white-font;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18.75px;
+        border-radius: 39px;
+        padding: 13px 0px;
+        text-decoration: none;
+        background-image: linear-gradient($secondary, $primary-purple);
+        box-shadow: $base-box-shadow;
+        margin-bottom: 40px;
+        transition: ease 0.3s;
+        width: 250px;
+        text-align: center;
+    }
+
+    .header-section .header-button:hover {
+        background-image: linear-gradient($secondary-lighter, $primary-purple-lighter);
+        box-shadow: $hover-box-shadow;
+        width: 265px;
+        transition: ease 0.3s;
+        text-align: center;
     }
 
     .nav-section {
