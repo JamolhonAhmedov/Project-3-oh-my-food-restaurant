@@ -7,10 +7,6 @@
   font-family: "Roboto";
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .preloader-container {
   position: fixed;
   top: 0;
@@ -22,7 +18,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeOut 1s 2s forwards;
+  animation: fadeOut 1s 1s forwards;
 }
 
 .big-circle {
@@ -43,7 +39,7 @@ html {
   border: 0px solid rgba(221, 221, 221, 0.8666666667);
   border-top-color: #ffffff;
   border-radius: 50%;
-  animation: outer-ring 2s linear infinite;
+  animation: outer-ring 1s linear infinite;
   border-top-width: 20px;
 }
 
@@ -205,7 +201,9 @@ header .islington-p-tag i {
 }
 
 .header-section .header-button:hover {
-  background-image: linear-gradient(#fa98df, #9f6adf);
+  font-size: 20px;
+  font-weight: 500;
+  background-image: linear-gradient(#9356DC, #FF79DA);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
   transition: ease 0.3s;
 }
@@ -233,6 +231,11 @@ header .islington-p-tag i {
   margin-bottom: 20px;
   gap: 40px;
   background-color: #F3F3F3;
+  border: 1px solid red;
+  animation: fade-in linear forwards;
+  animation-timeline: view(550px 10px);
+  animation-range-start: cover;
+  animation-range-end: cover;
 }
 .nav-list-holder .nav-single-option-holder i {
   margin-right: -15px;
@@ -297,14 +300,14 @@ main .main-section-title {
   background-color: #fff;
   border-radius: 15px;
   margin-bottom: 20px;
-  border: 5px solid green;
-  animation: fade-inn linear forwards;
-  animation-timeline: view(600px 10px);
+  border: 1px solid red;
+  animation: fade-in linear forwards;
+  animation-timeline: view(550px 10px);
   animation-range-start: cover;
   animation-range-end: cover;
 }
 
-@-webkit-keyframes fade-inn {
+@keyframes fade-in {
   from {
     scale: 0.8;
     opacity: 0;
@@ -428,28 +431,6 @@ footer .fa-solid.fa-utensils {
     font-size: 40px;
     font-weight: 700;
   }
-  .header-section .header-button {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 18.75px;
-    border-radius: 39px;
-    padding: 13px 0px;
-    text-decoration: none;
-    background-image: linear-gradient(#FF79DA, #9356DC);
-    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.4);
-    margin-bottom: 40px;
-    transition: ease 0.3s;
-    width: 250px;
-    text-align: center;
-  }
-  .header-section .header-button:hover {
-    background-image: linear-gradient(#fa98df, #9f6adf);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-    width: 265px;
-    transition: ease 0.3s;
-    text-align: center;
-  }
   .nav-section {
     display: flex;
     flex-direction: column;
@@ -494,6 +475,21 @@ footer .fa-solid.fa-utensils {
     width: 490px;
     height: 320px;
     transition: ease 0.5s;
+    border: 1px solid green;
+    animation: fade-in linear forwards;
+    animation-timeline: view(700px 10px);
+    animation-range-start: cover;
+    animation-range-end: cover;
+  }
+  @keyframes fade-in {
+    from {
+      scale: 0.8;
+      opacity: 0;
+    }
+    to {
+      scale: 1;
+      opacity: 1;
+    }
   }
   .restaurant-banner:hover {
     box-shadow: 0 5px 1px rgba(0, 0, 0, 0.4);

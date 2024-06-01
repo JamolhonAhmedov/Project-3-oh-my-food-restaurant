@@ -5,11 +5,6 @@
     font-family: "Roboto";
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-
 // PRE-LOADER
 
 .preloader-container {
@@ -23,7 +18,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeOut 1s 2s forwards;
+    animation: fadeOut 1s 1s forwards;
 }
 
 // VERSION 1
@@ -45,7 +40,7 @@ html {
     border: 0px solid #dddd;
     border-top-color: #ffffff;
     border-radius: 50%;
-    animation: outer-ring 2s linear infinite;
+    animation: outer-ring 1s linear infinite;
     border-top-width: 20px;
 }
 
@@ -151,22 +146,6 @@ html {
 
 }
 
-
-// .preloader-fader {
-//     opacity: 0;
-//     visibility: none;
-// }
-
-// @media all {
-
-//     .preloader-container {
-//         animation-delay: 5s;
-//          display: none;
-//          opacity: 0;
-//     }
-// }
-
-
 .page-container {
     display: flex;
     flex-direction: column;
@@ -245,11 +224,13 @@ header .islington-p-tag {
     background-image: linear-gradient($secondary, $primary-purple);
     box-shadow: $base-box-shadow;
     margin-bottom: 40px;
-    transition: ease .3s;
+    transition: ease 0.3s;
 }
 
 .header-section .header-button:hover {
-    background-image: linear-gradient($secondary-lighter, $primary-purple-lighter);
+    font-size: 20px;
+    font-weight: 500;
+    background-image: linear-gradient($primary-purple, $secondary);
     box-shadow: $hover-box-shadow;
     transition: ease 0.3s;
 }
@@ -281,6 +262,14 @@ header .islington-p-tag {
     margin-bottom: 20px;
     gap: 40px;
     background-color: $page-light-grey-bg;
+
+    border: 1px solid red;
+    animation: fade-in linear forwards;
+    animation-timeline: view(550px 10px);
+    animation-range-start: cover;
+    animation-range-end: cover;
+
+
 
     i {
         margin-right: -15px;
@@ -342,6 +331,8 @@ main {
     color: $black-font;
 }
 
+// @media () 
+
 .restaurant-banner {
     display: flex;
     flex-direction: column;
@@ -351,19 +342,15 @@ main {
     border-radius: 15px;
     margin-bottom: 20px;
 
-
-
-    // BANNER IMAGE FADE IN ANIMATION TEST 
-
-    border: 5px solid green;
-    animation: fade-inn linear forwards;
-    animation-timeline: view(600px 10px);
+    border: 1px solid red;
+    animation: fade-in linear forwards;
+    animation-timeline: view(550px 10px);
     animation-range-start: cover;
     animation-range-end: cover;
 
 }
 
-@-webkit-keyframes fade-inn {
+@keyframes fade-in {
     from {
         scale: 0.8;
         opacity: 0;
@@ -373,10 +360,8 @@ main {
         scale: 1;
         opacity: 1;
     }
+
 }
-
-
-// BANNER IMAGE FADE IN ANIMATION TEST 
 
 .restaurant-banner:hover {
     box-shadow: $hover-box-shadow;
@@ -510,31 +495,6 @@ footer {
         font-weight: 700;
     }
 
-
-    .header-section .header-button {
-        color: $white-font;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 18.75px;
-        border-radius: 39px;
-        padding: 13px 0px;
-        text-decoration: none;
-        background-image: linear-gradient($secondary, $primary-purple);
-        box-shadow: $base-box-shadow;
-        margin-bottom: 40px;
-        transition: ease 0.3s;
-        width: 250px;
-        text-align: center;
-    }
-
-    .header-section .header-button:hover {
-        background-image: linear-gradient($secondary-lighter, $primary-purple-lighter);
-        box-shadow: $hover-box-shadow;
-        width: 265px;
-        transition: ease 0.3s;
-        text-align: center;
-    }
-
     .nav-section {
         display: flex;
         flex-direction: column;
@@ -586,6 +546,28 @@ footer {
         width: 490px;
         height: 320px;
         transition: ease 0.5s;
+
+        //      BANNER FADE IN ANIMATION FOR FULL SCREEN
+
+        border: 1px solid green;
+        animation: fade-in linear forwards;
+        animation-timeline: view(700px 10px);
+        animation-range-start: cover;
+        animation-range-end: cover;
+    }
+
+
+    @keyframes fade-in {
+        from {
+            scale: 0.8;
+            opacity: 0;
+        }
+
+        to {
+            scale: 1;
+            opacity: 1;
+        }
+
     }
 
 
