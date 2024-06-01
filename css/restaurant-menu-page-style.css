@@ -211,6 +211,11 @@ input:checked ~ span::after {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
+  border: 1px solid orange;
+  animation: fade-in linear forwards;
+  animation-timeline: view(550px 10px);
+  animation-range-start: cover;
+  animation-range-end: cover;
 }
 .starter-banner .starter-menu-item-title {
   margin-left: 10px;
@@ -218,6 +223,16 @@ input:checked ~ span::after {
   font-weight: 700;
   line-height: 21.09px;
   padding: 5px 0;
+}
+@keyframes fade-in {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
 .starter-banner .starter-menu-item-p-text {
   margin-left: 10px;
@@ -266,6 +281,11 @@ input:checked ~ span::after {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
+  border: 1px solid orange;
+  animation: fade-in linear forwards;
+  animation-timeline: view(550px 10px);
+  animation-range-start: cover;
+  animation-range-end: cover;
 }
 .mains-banner .main-item-title {
   margin-left: 10px;
@@ -328,6 +348,11 @@ input:checked ~ span::after {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
+  border: 1px solid orange;
+  animation: fade-in linear forwards;
+  animation-timeline: view(550px 10px);
+  animation-range-start: cover;
+  animation-range-end: cover;
 }
 .desserts-banner .dessert-item-title {
   margin-left: 10px;

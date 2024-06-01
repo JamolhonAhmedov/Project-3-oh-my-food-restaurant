@@ -207,9 +207,6 @@ input:checked~span::after {
   transition: ease 0.3s;
 }
 
-
-
-
 /* MENU AMINATION END */
 
 .starters-main-div {
@@ -233,12 +230,33 @@ input:checked~span::after {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
 
+  // MENU FADE IN ANIMATION
+
+  border: 1px solid orange;
+  animation: fade-in linear forwards;
+  animation-timeline: view(550px 10px);
+  animation-range-start: cover;
+  animation-range-end: cover;
+
+
   .starter-menu-item-title {
     margin-left: 10px;
     font-size: $h3-font-size;
     font-weight: $h3-font-weight + 200;
     line-height: $h3-line-height;
     padding: 5px 0;
+  }
+
+  @keyframes fade-in {
+    from {
+      scale: 0.8;
+      opacity: 0;
+    }
+
+    to {
+      scale: 1;
+      opacity: 1;
+    }
   }
 
   .starter-menu-item-p-text {
@@ -292,6 +310,14 @@ input:checked~span::after {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
+
+  // MAINS BANNER FADE IN ANIMATION
+
+  border: 1px solid orange;
+  animation: fade-in linear forwards;
+  animation-timeline: view(550px 10px);
+  animation-range-start: cover;
+  animation-range-end: cover;
 
   .main-item-title {
     margin-left: 10px;
@@ -358,6 +384,14 @@ input:checked~span::after {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
+
+  // DESSERT BANNER FADE IN ANIMATION 
+
+  border: 1px solid orange;
+  animation: fade-in linear forwards;
+  animation-timeline: view(550px 10px);
+  animation-range-start: cover;
+  animation-range-end: cover;
 
 
   .dessert-item-title {
