@@ -231,7 +231,6 @@ header .islington-p-tag i {
   margin-bottom: 20px;
   gap: 40px;
   background-color: #F3F3F3;
-  border: 1px solid red;
   animation: fade-in linear forwards;
   animation-timeline: view(550px 10px);
   animation-range-start: cover;
@@ -300,7 +299,6 @@ main .main-section-title {
   background-color: #fff;
   border-radius: 15px;
   margin-bottom: 20px;
-  border: 1px solid red;
   animation: fade-in linear forwards;
   animation-timeline: view(550px 10px);
   animation-range-start: cover;

@@ -263,7 +263,8 @@ header .islington-p-tag {
     gap: 40px;
     background-color: $page-light-grey-bg;
 
-    border: 1px solid red;
+    // NAVIGATION FADE IN ANIMATION
+
     animation: fade-in linear forwards;
     animation-timeline: view(550px 10px);
     animation-range-start: cover;
@@ -342,7 +343,8 @@ main {
     border-radius: 15px;
     margin-bottom: 20px;
 
-    border: 1px solid red;
+    // FADE IN ANIMATION
+
     animation: fade-in linear forwards;
     animation-timeline: view(550px 10px);
     animation-range-start: cover;
