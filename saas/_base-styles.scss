@@ -57,19 +57,19 @@
 .ring:nth-child(1) {
     border-bottom-width: 10px;
     border-color: rgb(255, 0, 255);
-    animation: rotate1 3s linear infinite;
+    animation: rotate1 2s linear infinite;
 }
 
 .ring:nth-child(2) {
     border-right-width: 10px;
     border-color: rgb(0, 242, 255);
-    animation: rotate2 3s linear infinite;
+    animation: rotate2 2s linear infinite;
 }
 
 .ring:nth-child(3) {
     border-top-width: 10px;
     border-color: rgb(68, 0, 255);
-    animation: rotate3 3s linear infinite;
+    animation: rotate3 2s linear infinite;
 }
 
 .loading {
@@ -142,8 +142,6 @@
         display: none;
         opacity: 0;
     }
-
-
 }
 
 .page-container {
@@ -331,8 +329,6 @@ main {
     text-decoration: none;
     color: $black-font;
 }
-
-// @media () 
 
 .restaurant-banner {
     display: flex;
