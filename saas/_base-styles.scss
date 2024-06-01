@@ -5,6 +5,11 @@
     font-family: "Roboto";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 // PRE-LOADER
 
 .preloader-container {
@@ -240,17 +245,13 @@ header .islington-p-tag {
     background-image: linear-gradient($secondary, $primary-purple);
     box-shadow: $base-box-shadow;
     margin-bottom: 40px;
-    transition: ease 0.3s;
-    width: 215px;
-    text-align: center;
+    transition: ease .3s;
 }
 
 .header-section .header-button:hover {
     background-image: linear-gradient($secondary-lighter, $primary-purple-lighter);
     box-shadow: $hover-box-shadow;
-    width: 225px;
     transition: ease 0.3s;
-    text-align: center;
 }
 
 
@@ -349,7 +350,33 @@ main {
     background-color: $white-bg;
     border-radius: 15px;
     margin-bottom: 20px;
+
+
+
+    // BANNER IMAGE FADE IN ANIMATION TEST 
+
+    border: 5px solid green;
+    animation: fade-inn linear forwards;
+    animation-timeline: view(600px 10px);
+    animation-range-start: cover;
+    animation-range-end: cover;
+
 }
+
+@-webkit-keyframes fade-inn {
+    from {
+        scale: 0.8;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+
+// BANNER IMAGE FADE IN ANIMATION TEST 
 
 .restaurant-banner:hover {
     box-shadow: $hover-box-shadow;

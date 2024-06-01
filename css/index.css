@@ -7,6 +7,10 @@
   font-family: "Roboto";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .preloader-container {
   position: fixed;
   top: 0;
@@ -198,16 +202,12 @@ header .islington-p-tag i {
   box-shadow: 0 5px 1px rgba(0, 0, 0, 0.4);
   margin-bottom: 40px;
   transition: ease 0.3s;
-  width: 215px;
-  text-align: center;
 }
 
 .header-section .header-button:hover {
   background-image: linear-gradient(#fa98df, #9f6adf);
-  box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
-  width: 225px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
   transition: ease 0.3s;
-  text-align: center;
 }
 
 .nav-section {
@@ -262,7 +262,7 @@ header .islington-p-tag i {
   padding: 10px 15px;
   transition: ease 0.3s;
   background-color: #6521b9;
-  box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 main {
@@ -297,10 +297,25 @@ main .main-section-title {
   background-color: #fff;
   border-radius: 15px;
   margin-bottom: 20px;
+  border: 5px solid green;
+  animation: fade-inn linear forwards;
+  animation-timeline: view(600px 10px);
+  animation-range-start: cover;
+  animation-range-end: cover;
 }
 
+@-webkit-keyframes fade-inn {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
 .restaurant-banner:hover {
-  box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
   transition: ease 0.5s;
 }
 
@@ -327,7 +342,7 @@ main .main-section-title {
   color: #fff;
   font-size: 18px;
   transition: ease 0.4s;
-  box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .restaurant-banner i {
@@ -430,7 +445,7 @@ footer .fa-solid.fa-utensils {
   }
   .header-section .header-button:hover {
     background-image: linear-gradient(#fa98df, #9f6adf);
-    box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
     width: 265px;
     transition: ease 0.3s;
     text-align: center;
