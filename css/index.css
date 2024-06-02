@@ -34,18 +34,18 @@
 
 .big-circle::after {
   content: "";
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border: 0px solid rgba(221, 221, 221, 0.8666666667);
   border-top-color: #ffffff;
   border-radius: 50%;
   animation: outer-ring 1s linear infinite;
-  border-top-width: 20px;
+  border-top-width: 10px;
 }
 
 .ring {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border: 0px solid #fff;
   border-radius: 50%;
   position: absolute;
@@ -347,20 +347,30 @@ main .main-section-title {
 }
 
 .restaurant-banner i {
-  position: relative;
+  position: absolute;
   color: #353535;
-  top: -45px;
-  left: 300px;
+  top: 250px;
+  left: 290px;
+  transition: 1s ease;
 }
 
 .restaurant-banner i:hover {
-  filter: invert(61%) sepia(78%) saturate(6061%) hue-rotate(243deg) brightness(91%) contrast(88%);
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
+  transition: 0.5s ease;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .restaurant-banner .fa-regular.fa-heart {
   font-size: 30px;
+  transition: 1s ease;
+}
+.restaurant-banner .fa-regular.fa-heart:hover {
+  font-size: 33px;
+  transition: 0.25s ease;
+  color: linear-gradient(#9356DC, #FF79DA);
 }
 .restaurant-banner .restaurant-banner-title {
   font-size: 18px;
@@ -374,6 +384,7 @@ main .main-section-title {
   font-weight: 300;
   line-height: 17.63px;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 .restaurant-banner .restaurant-img {
   object-fit: cover;
@@ -473,7 +484,6 @@ footer .fa-solid.fa-utensils {
     width: 490px;
     height: 320px;
     transition: ease 0.5s;
-    border: 1px solid green;
     animation: fade-in linear forwards;
     animation-timeline: view(700px 10px);
     animation-range-start: cover;
