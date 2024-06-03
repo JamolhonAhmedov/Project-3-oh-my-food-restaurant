@@ -36,18 +36,18 @@ html {
 
 .big-circle::after {
   content: "";
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border: 0px solid rgba(221, 221, 221, 0.8666666667);
   border-top-color: #ffffff;
   border-radius: 50%;
   animation: outer-ring 1s linear infinite;
-  border-top-width: 20px;
+  border-top-width: 10px;
 }
 
 .ring {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border: 0px solid #fff;
   border-radius: 50%;
   position: absolute;
@@ -218,10 +218,14 @@ html {
   left: 320px;
   top: 35px;
   font-size: 30px;
+  font-weight: 100;
+  transition: ease 1s;
 }
 
 .fa-regular.fa-heart:hover {
-  color: linear-gradient(#FF79DA, #9356DC);
+  color: #9356DC;
+  font-weight: 600;
+  transition: ease 1s;
 }
 
 /* MENU SLIDE IN AMINATION HERE */
@@ -375,6 +379,10 @@ input:checked ~ span::after {
   font-size: 13.04px;
   font-weight: 300;
   line-height: 17.63px;
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .starter-banner .starter-menu-item-price {
   color: #000;
@@ -436,6 +444,10 @@ input:checked ~ span::after {
   font-size: 15.04px;
   font-weight: 300;
   line-height: 17.63px;
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .mains-banner .main-menu-item-price {
   color: #000;
@@ -499,11 +511,15 @@ input:checked ~ span::after {
   line-height: 21.09px;
   padding: 5px 0;
 }
-.desserts-banner .main-item-p-text {
+.desserts-banner .dessert-item-p-text {
   margin-left: 10px;
-  font-size: 15.04px;
+  font-size: 13.04px;
   font-weight: 300;
   line-height: 17.63px;
+  width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .desserts-banner .dessert-menu-item-price {
   color: #353535;
@@ -593,7 +609,7 @@ footer .fa-solid.fa-utensils {
   color: #fff;
 }
 
-/* @ MEDIA 1440 PX */
+/* @ MEDIA 1440 PX - DESKTOP VERSION PAGE */
 @media all and (min-width: 1440px) {
   .page-container {
     display: flex;
@@ -667,6 +683,11 @@ footer .fa-solid.fa-utensils {
     animation-timeline: view(900px 10px);
     animation-range-start: cover;
     animation-range-end: cover;
+  }
+  .starter-banner .dessert-item-p-text,
+  .mains-banner .dessert-item-p-text,
+  .desserts-banner .dessert-item-p-text {
+    width: 250px;
   }
   /* FOOTER */
   footer {

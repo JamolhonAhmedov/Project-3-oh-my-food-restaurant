@@ -7,6 +7,10 @@
   font-family: "Roboto";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .preloader-container {
   position: fixed;
   top: 0;
@@ -129,7 +133,6 @@
   flex-direction: column;
   width: 375px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .header-logo-div {
@@ -433,7 +436,6 @@ footer .fa-solid.fa-utensils {
 
 @media all and (min-width: 1440px) {
   .page-container {
-    border: 1px solid green;
     min-width: 1440px;
   }
   h2.header-title {

@@ -50,20 +50,20 @@ html {
 
 .big-circle::after {
   content: "";
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border: 0px solid #dddd;
   border-top-color: #ffffff;
   border-radius: 50%;
   animation: outer-ring 1s linear infinite;
-  border-top-width: 20px;
+  border-top-width: 10px;
 }
 
 // VERSION 2
 
 .ring {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border: 0px solid #fff;
   border-radius: 50%;
   position: absolute;
@@ -267,10 +267,17 @@ html {
   left: 320px;
   top: 35px;
   font-size: 30px;
+
+  font-weight: 100;
+  transition: ease 1s;
+
+
 }
 
 .fa-regular.fa-heart:hover {
-  color: $hart-symbol-color;
+  color: $primary-purple;
+  font-weight: 600;
+  transition: ease 1s;
 }
 
 
@@ -439,6 +446,12 @@ input:checked~span::after {
     font-size: $p-font-size - 2px;
     font-weight: $p-font-weight;
     line-height: $p-line-height;
+
+    // TEXT TRUNCATE CODE
+    width: 240px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .starter-menu-item-price {
@@ -511,6 +524,12 @@ input:checked~span::after {
     font-size: $p-font-size;
     font-weight: $p-font-weight;
     line-height: $p-line-height;
+
+    // TEXT TRUNCATE CODE
+    width: 240px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .main-menu-item-price {
@@ -585,11 +604,17 @@ input:checked~span::after {
     padding: 5px 0;
   }
 
-  .main-item-p-text {
+  .dessert-item-p-text {
     margin-left: 10px;
-    font-size: $p-font-size;
+    font-size: $p-font-size - 2px;
     font-weight: $p-font-weight;
     line-height: $p-line-height;
+
+    // TEXT TRUNCATE CODE
+    width: 240px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .dessert-menu-item-price {
@@ -689,7 +714,10 @@ footer {
   }
 }
 
-/* @ MEDIA 1440 PX */
+
+
+
+/* @ MEDIA 1440 PX - DESKTOP VERSION PAGE */
 @media all and (min-width: 1440px) {
   .page-container {
     display: flex;
@@ -778,7 +806,18 @@ footer {
     animation-timeline: view(900px 10px);
     animation-range-start: cover;
     animation-range-end: cover;
+
+
+    // TEXT TRANCATING CANCELLED
+    .dessert-item-p-text {
+
+      // TEXT TRUNCATE CODE CENCELLED
+      width: 250px;
+    }
   }
+
+
+
 
   /* FOOTER */
   footer {
