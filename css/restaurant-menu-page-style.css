@@ -141,8 +141,9 @@ html {
   margin: 0 auto;
   background-color: #fff;
   border: 1px solid #fff;
-  position: sticky;
   border-bottom: 2px solid rgba(128, 128, 128, 0.462);
+  position: sticky;
+  z-index: 99;
   animation: logo-fade-in 1s ease-in 2s forwards;
   opacity: 0;
 }

@@ -176,8 +176,12 @@ html {
   margin: 0 auto;
   background-color: $white-bg;
   border: 1px solid $white-bg;
-  position: sticky;
   border-bottom: 2px solid rgba(128, 128, 128, 0.462);
+
+  // MAIN LOGO STICKY POSITIONED HERE
+
+  position: sticky;
+  z-index: 99;
 
   // PAGE MAIN LOGO FADE IN 
 
