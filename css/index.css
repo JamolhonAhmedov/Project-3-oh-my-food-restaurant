@@ -58,19 +58,19 @@ html {
 .ring:nth-child(1) {
   border-bottom-width: 10px;
   border-color: rgb(255, 0, 255);
-  animation: rotate1 2s linear infinite;
+  animation: rotate1 3s linear infinite;
 }
 
 .ring:nth-child(2) {
   border-right-width: 10px;
   border-color: rgb(0, 242, 255);
-  animation: rotate2 2s linear infinite;
+  animation: rotate2 3s linear infinite;
 }
 
 .ring:nth-child(3) {
   border-top-width: 10px;
   border-color: rgb(68, 0, 255);
-  animation: rotate3 2s linear infinite;
+  animation: rotate3 3s linear infinite;
 }
 
 .loading {
@@ -126,6 +126,7 @@ html {
   100% {
     display: none;
     opacity: 0;
+    z-index: -10;
   }
 }
 .page-container {
@@ -135,18 +136,23 @@ html {
   margin: 0 auto;
 }
 
+.logo-stick {
+  position: relative;
+}
+
+@supports (position: sticky) {
+  .logo-stick {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+}
 .header-logo-div {
   background-color: #fff;
   border: 1px solid #fff;
   position: sticky;
   top: 0;
   border-bottom: 2px solid rgba(128, 128, 128, 0.462);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  position: sticky;
-  z-index: 99;
 }
 
 .header-logo {
