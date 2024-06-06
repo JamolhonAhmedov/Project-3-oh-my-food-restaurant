@@ -438,7 +438,7 @@ main .main-section-title {
 .restaurant-banner .fa-regular.fa-heart:hover {
   font-size: 33px;
   transition: 0.25s ease;
-  color: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
 }
 .restaurant-banner .restaurant-banner-title {
   font-size: 18px;
@@ -555,11 +555,11 @@ footer .fa-solid.fa-utensils {
   }
   @keyframes fade-in {
     from {
-      scale: 0.8;
+      transform: scale(0.8);
       opacity: 0;
     }
     to {
-      scale: 1;
+      transform: scale(1);
       opacity: 1;
     }
   }

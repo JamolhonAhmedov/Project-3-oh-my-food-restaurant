@@ -186,7 +186,7 @@ html {
 .animation:hover .checkbox-div {
   transform: translateX(305px);
   transition: ease 0.3s;
-  visibility: none;
+  visibility: hidden;
   opacity: 0;
 }
 
@@ -305,12 +305,12 @@ input:checked~span::after {
 
   @keyframes fade-in {
     from {
-      scale: 0.8;
+      transform: scale(0.8);
       opacity: 0;
     }
 
     to {
-      scale: 1;
+      transform: scale(1);
       opacity: 1;
     }
   }
