@@ -399,8 +399,6 @@ main {
     background-color: $page-light-grey-bg;
     animation: main-section-fade-in 3s 2.5s forwards;
 
-
-
     .main-section-title {
         font-size: $h2-font-size;
         font-weight: $h2-font-weight;
@@ -409,7 +407,6 @@ main {
         margin-bottom: 20px;
         margin-left: 15px;
     }
-
 
     @keyframes main-section-fade-in {
         from {
@@ -422,15 +419,7 @@ main {
             transform: translateY(0);
         }
     }
-
-
-
 }
-
-
-
-
-
 
 .restaurant-all-banners-holder {
     display: flex;

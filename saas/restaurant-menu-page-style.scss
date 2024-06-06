@@ -295,14 +295,6 @@ input:checked~span::after {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
 
-  // MENU FADE IN ANIMATION
-
-  animation: fade-in linear forwards;
-  animation-timeline: view(550px 10px);
-  animation-range-start: cover;
-  animation-range-end: cover;
-
-
   .starter-menu-item-title {
     margin-left: 10px;
     font-size: $h3-font-size;
@@ -386,13 +378,6 @@ input:checked~span::after {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
 
-  // MAINS BANNER FADE IN ANIMATION
-
-  animation: fade-in linear forwards;
-  animation-timeline: view(550px 10px);
-  animation-range-start: cover;
-  animation-range-end: cover;
-
   .main-item-title {
     margin-left: 10px;
     font-size: $h3-font-size;
@@ -469,14 +454,6 @@ input:checked~span::after {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   position: relative;
-
-  // DESSERT BANNER FADE IN ANIMATION 
-
-  animation: fade-in linear forwards;
-  animation-timeline: view(550px 10px);
-  animation-range-start: cover;
-  animation-range-end: cover;
-
 
   .dessert-item-title {
     margin-left: 10px;
@@ -596,8 +573,6 @@ footer {
   }
 }
 
-
-
 /* @ MEDIA 1440 PX - DESKTOP VERSION PAGE */
 @media all and (min-width: 1440px) {
   .page-container {
@@ -677,52 +652,37 @@ footer {
     transform: translateX(565px);
   }
 
-  // INDIVIDUAL BANNER FADE IN ANIMATION FOR FULL PAGE VERSION
+  // TEXT TRANCATING CANCELLED
+  .dessert-item-p-text {
 
-  .starter-banner,
-  .mains-banner,
-  .desserts-banner {
-
-    animation: fade-in linear forwards;
-    animation-timeline: view(900px 10px);
-    animation-range-start: cover;
-    animation-range-end: cover;
-
-
-    // TEXT TRANCATING CANCELLED
-    .dessert-item-p-text {
-
-      // TEXT TRUNCATE CODE CENCELLED
-      width: 250px;
-    }
-  }
-
-
-
-
-  /* FOOTER */
-  footer {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    position: absolute;
-    top: 1660px;
-    width: 1440px;
-    justify-content: end;
-    align-items: center;
-    background-color: #353535;
-    padding-top: 30px;
-    padding-right: 300px;
-    margin-top: 35px;
-
-    .footer-logo-img {
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      left: 800px;
-      margin-bottom: 40px;
-    }
+    // TEXT TRUNCATE CODE CENCELLED
+    width: 250px;
   }
 }
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  position: absolute;
+  top: 1660px;
+  width: 1440px;
+  justify-content: end;
+  align-items: center;
+  background-color: #353535;
+  padding-top: 30px;
+  padding-right: 300px;
+  margin-top: 35px;
+
+  .footer-logo-img {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 800px;
+    margin-bottom: 40px;
+  }
+}
+
 
 /*# sourceMappingURL=restaurant-menu-page-style.css.map */
