@@ -399,6 +399,18 @@ main {
     background-color: $page-light-grey-bg;
     animation: main-section-fade-in 3s 2.5s forwards;
 
+
+
+    .main-section-title {
+        font-size: $h2-font-size;
+        font-weight: $h2-font-weight;
+        line-height: $h2-line-height;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+
+
     @keyframes main-section-fade-in {
         from {
             opacity: 0;
@@ -411,24 +423,7 @@ main {
         }
     }
 
-    .main-section-title {
-        font-size: $h2-font-size;
-        font-weight: $h2-font-weight;
-        line-height: $h2-line-height;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        margin-left: 15px;
-    }
 
-
-
-
-    .restaurant-all-banners-holder {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
 }
 
@@ -437,7 +432,12 @@ main {
 
 
 
-
+.restaurant-all-banners-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .restaurant-banner .html-link-holder-a {
     text-decoration: none;
