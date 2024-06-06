@@ -134,6 +134,7 @@ html {
   flex-direction: column;
   width: 375px;
   margin: 0 auto;
+  border: 1px solid #EAEAEA;
 }
 
 .logo-stick {
@@ -159,8 +160,23 @@ html {
   display: flex;
   width: 162px;
   margin: 15px auto;
+  opacity: 0;
 }
 
+.header-logo {
+  animation: navigation-fade-in 2.5s 1s forwards;
+}
+
+@keyframes logo-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 header .islington-p-tag {
   font-size: 16px;
   font-weight: 500;
@@ -178,6 +194,36 @@ header .islington-p-tag i {
   margin-right: 20px;
 }
 
+header .islington-p-tag {
+  animation: islington-fade-in 2.5s 1s forwards;
+}
+
+@keyframes islington-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.header-title,
+.header-p-text,
+.header-button {
+  animation: islington-fade-in 2.5s 1s forwards;
+}
+
+@keyframes header-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .header-section {
   background-color: #F3F3F3;
   display: flex;
@@ -227,6 +273,7 @@ header .islington-p-tag i {
   background-color: #fff;
   padding: 20px 25px;
   padding-bottom: 40px;
+  opacity: 0;
 }
 .nav-section .nav-section-title {
   font-size: 16px;
@@ -235,6 +282,20 @@ header .islington-p-tag i {
   margin: 25px 0;
 }
 
+.nav-section {
+  animation: navigation-fade-in 3s 2s forwards;
+}
+
+@keyframes navigation-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .nav-list-holder .nav-single-option-holder {
   display: flex;
   flex-direction: row;
@@ -245,11 +306,6 @@ header .islington-p-tag i {
   height: 72.38px;
   margin-bottom: 20px;
   gap: 40px;
-  background-color: #F3F3F3;
-  animation: fade-in linear forwards;
-  animation-timeline: view(550px 10px);
-  animation-range-start: cover;
-  animation-range-end: cover;
 }
 .nav-list-holder .nav-single-option-holder i {
   margin-right: -15px;
@@ -284,6 +340,17 @@ header .islington-p-tag i {
 
 main {
   background-color: #F3F3F3;
+  animation: main-section-fade-in 3s 2.5s forwards;
+}
+@keyframes main-section-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 main .main-section-title {
   font-size: 16px;
@@ -293,8 +360,7 @@ main .main-section-title {
   margin-bottom: 20px;
   margin-left: 15px;
 }
-
-.restaurant-all-banners-holder {
+main .restaurant-all-banners-holder {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -314,22 +380,8 @@ main .main-section-title {
   background-color: #fff;
   border-radius: 15px;
   margin-bottom: 20px;
-  animation: fade-in linear forwards;
-  animation-timeline: view(550px 10px);
-  animation-range-start: cover;
-  animation-range-end: cover;
 }
 
-@keyframes fade-in {
-  from {
-    scale: 0.8;
-    opacity: 0;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
 .restaurant-banner:hover {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
   transition: ease 0.5s;
@@ -448,6 +500,7 @@ footer .fa-solid.fa-utensils {
 
 @media all and (min-width: 1440px) {
   .page-container {
+    border: 1px solid #F3F3F3;
     min-width: 1440px;
   }
   h2.header-title {
@@ -498,10 +551,6 @@ footer .fa-solid.fa-utensils {
     width: 490px;
     height: 320px;
     transition: ease 0.5s;
-    animation: fade-in linear forwards;
-    animation-timeline: view(700px 10px);
-    animation-range-start: cover;
-    animation-range-end: cover;
   }
   @keyframes fade-in {
     from {
