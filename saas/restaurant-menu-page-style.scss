@@ -3,6 +3,7 @@
 
 // BASE AND LAYOUT
 
+
 // COLORS
 
 // COMPONENTS (BUTTONS, CARDS, NAVBAR)
@@ -25,58 +26,38 @@ html {
   margin: 0 auto;
 }
 
-// MAIN LOGO STICKY POSITIONED HERE
-
-.logo-stick {
-  position: relative;
-
-  // DIFFERENT BROWSER SUPPORT - OPTION 2
-
-  // position: -webkit-sticky;
-  // position: -moz-sticky;
-  // position: -ms-sticky;
-  // position: -o-sticky;
-  // position: sticky;
-  // top: 0;
-  // z-index: 99;
-}
-
-@supports (position: sticky) {
-  .logo-stick {
-    position: sticky;
-    top: 0;
-    z-index: 99;
-  }
-}
-
-
 .header-logo-div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
   margin: 0 auto;
   background-color: $white-bg;
   border: 1px solid $white-bg;
   border-bottom: 2px solid rgba(128, 128, 128, 0.462);
 
+  // MAIN LOGO STICKY POSITIONED HERE
+
+  position: sticky;
+  z-index: 99;
+
   // PAGE MAIN LOGO FADE IN 
 
-  animation: logo-fade-in 1s ease-in 1s forwards;
+  animation: logo-fade-in 1s 1s ease forwards;
   opacity: 0;
 }
 
 @keyframes logo-fade-in {
-  0% {
+  from {
     opacity: 0;
+    transform: translateY(-15px);
   }
 
-  100% {
+  to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
-
 
 .header-logo {
   display: flex;
@@ -112,8 +93,20 @@ html {
 
   // PAGE BANNER FADE IN ANIMATION
 
-  animation: logo-fade-in 1s ease-in 1.25s forwards;
+  animation: banner-image-fade-in 1s 1.5s ease forwards;
   opacity: 0;
+}
+
+@keyframes banner-image-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .page-main-section-div {
@@ -127,9 +120,20 @@ html {
 
   // MAIN PADE FADE IN ANIMATION
 
-  animation: logo-fade-in 1s ease-in 1.5s forwards;
+  animation: main-section-fade-in 1s 2s ease forwards;
   opacity: 0;
 
+  @keyframes main-section-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   .page-title {
     color: #101010;
@@ -186,7 +190,7 @@ html {
 .animation:hover .checkbox-div {
   transform: translateX(305px);
   transition: ease 0.3s;
-  visibility: hidden;
+  visibility: none;
   opacity: 0;
 }
 
@@ -275,9 +279,6 @@ input:checked~span::after {
 
   // STARTER SECTION FADE IN ANIMATION
 
-  animation: logo-fade-in 1s ease-in 1.5s forwards;
-  opacity: 0;
-
   .starter-section-title {
     margin-left: 15px;
     text-transform: uppercase;
@@ -301,18 +302,6 @@ input:checked~span::after {
     font-weight: $h3-font-weight + 200;
     line-height: $h3-line-height;
     padding: 5px 0;
-  }
-
-  @keyframes fade-in {
-    from {
-      transform: scale(0.8);
-      opacity: 0;
-    }
-
-    to {
-      transform: scale(1);
-      opacity: 1;
-    }
   }
 
   .starter-menu-item-p-text {
@@ -354,11 +343,6 @@ input:checked~span::after {
 .main-section-menu-list-div {
   display: flex;
   flex-direction: column;
-
-  // MAINS SECTION FADE IN ANIMATION
-
-  animation: logo-fade-in 1s ease-in 2s forwards;
-  opacity: 0;
 
   .mains-section-title {
     margin-top: 30px;
@@ -425,10 +409,6 @@ input:checked~span::after {
   display: flex;
   flex-direction: column;
 
-  // DESSERTS SECTION FADE IN ANIMATION
-
-  animation: logo-fade-in 1s ease-in 2.5s forwards;
-  opacity: 0;
 
   .desserts-section-title {
     margin-left: 15px;
@@ -493,10 +473,6 @@ input:checked~span::after {
   }
 }
 
-.desserts-banner:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
-}
-
 /* ORDER BUTTON HERE */
 .order-btn {
   display: flex;
@@ -538,8 +514,20 @@ footer {
 
   // FOOTER SECTION FADE IN ANIMATION
 
-  animation: logo-fade-in 1s ease-in 3s forwards;
+  animation: footer-section-fade-in 1s 2.5s ease forwards;
   opacity: 0;
+
+  @keyframes footer-section-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   .footer-logo-img {
     width: 137.18px;
@@ -572,6 +560,9 @@ footer {
     color: #fff;
   }
 }
+
+
+
 
 /* @ MEDIA 1440 PX - DESKTOP VERSION PAGE */
 @media all and (min-width: 1440px) {
@@ -652,37 +643,52 @@ footer {
     transform: translateX(565px);
   }
 
-  // TEXT TRANCATING CANCELLED
-  .dessert-item-p-text {
+  // INDIVIDUAL BANNER FADE IN ANIMATION FOR FULL PAGE VERSION
 
-    // TEXT TRUNCATE CODE CENCELLED
-    width: 250px;
+  .starter-banner,
+  .mains-banner,
+  .desserts-banner {
+
+    animation: fade-in linear forwards;
+    animation-timeline: view(900px 10px);
+    animation-range-start: cover;
+    animation-range-end: cover;
+
+
+    // TEXT TRANCATING CANCELLED
+    .dessert-item-p-text {
+
+      // TEXT TRUNCATE CODE CENCELLED
+      width: 250px;
+    }
   }
-}
 
-/* FOOTER */
-footer {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  position: absolute;
-  top: 1660px;
-  width: 1440px;
-  justify-content: end;
-  align-items: center;
-  background-color: #353535;
-  padding-top: 30px;
-  padding-right: 300px;
-  margin-top: 35px;
 
-  .footer-logo-img {
+
+
+  /* FOOTER */
+  footer {
     display: flex;
     flex-direction: row;
-    position: relative;
-    left: 800px;
-    margin-bottom: 40px;
+    margin: 0 auto;
+    position: absolute;
+    top: 1660px;
+    width: 1440px;
+    justify-content: end;
+    align-items: center;
+    background-color: #353535;
+    padding-top: 30px;
+    padding-right: 300px;
+    margin-top: 35px;
+
+    .footer-logo-img {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      left: 800px;
+      margin-bottom: 40px;
+    }
   }
 }
-
 
 /*# sourceMappingURL=restaurant-menu-page-style.css.map */

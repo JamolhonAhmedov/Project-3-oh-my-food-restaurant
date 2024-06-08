@@ -16,17 +16,6 @@ html {
   margin: 0 auto;
 }
 
-.logo-stick {
-  position: relative;
-}
-
-@supports (position: sticky) {
-  .logo-stick {
-    position: sticky;
-    top: 0;
-    z-index: 99;
-  }
-}
 .header-logo-div {
   display: flex;
   flex-direction: row;
@@ -36,16 +25,20 @@ html {
   background-color: #fff;
   border: 1px solid #fff;
   border-bottom: 2px solid rgba(128, 128, 128, 0.462);
-  animation: logo-fade-in 1s ease-in 1s forwards;
+  position: sticky;
+  z-index: 99;
+  animation: logo-fade-in 1s 1s ease forwards;
   opacity: 0;
 }
 
 @keyframes logo-fade-in {
-  0% {
+  from {
     opacity: 0;
+    transform: translateY(-15px);
   }
-  100% {
+  to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 .header-logo {
@@ -79,10 +72,20 @@ html {
   height: 275px;
   width: 100%;
   object-position: 100% 80%;
-  animation: logo-fade-in 1s ease-in 1.25s forwards;
+  animation: banner-image-fade-in 1s 1.5s ease forwards;
   opacity: 0;
 }
 
+@keyframes banner-image-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .page-main-section-div {
   position: absolute;
   width: 375px;
@@ -91,8 +94,18 @@ html {
   background-color: #F6F6F6;
   border-top-left-radius: 39px;
   border-top-right-radius: 39px;
-  animation: logo-fade-in 1s ease-in 1.5s forwards;
+  animation: main-section-fade-in 1s 2s ease forwards;
   opacity: 0;
+}
+@keyframes main-section-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .page-main-section-div .page-title {
   color: #101010;
@@ -143,7 +156,7 @@ html {
 .animation:hover .checkbox-div {
   transform: translateX(305px);
   transition: ease 0.3s;
-  visibility: hidden;
+  visibility: none;
   opacity: 0;
 }
 
@@ -227,8 +240,6 @@ input:checked ~ span::after {
 .starters-main-div {
   display: flex;
   flex-direction: column;
-  animation: logo-fade-in 1s ease-in 1.5s forwards;
-  opacity: 0;
 }
 .starters-main-div .starter-section-title {
   margin-left: 15px;
@@ -252,16 +263,6 @@ input:checked ~ span::after {
   font-weight: 700;
   line-height: 21.09px;
   padding: 5px 0;
-}
-@keyframes fade-in {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
 .starter-banner .starter-menu-item-p-text {
   margin-left: 10px;
@@ -297,8 +298,6 @@ input:checked ~ span::after {
 .main-section-menu-list-div {
   display: flex;
   flex-direction: column;
-  animation: logo-fade-in 1s ease-in 2s forwards;
-  opacity: 0;
 }
 .main-section-menu-list-div .mains-section-title {
   margin-top: 30px;
@@ -358,8 +357,6 @@ input:checked ~ span::after {
 .desserts-section-div {
   display: flex;
   flex-direction: column;
-  animation: logo-fade-in 1s ease-in 2.5s forwards;
-  opacity: 0;
 }
 .desserts-section-div .desserts-section-title {
   margin-left: 15px;
@@ -418,10 +415,6 @@ input:checked ~ span::after {
   transition: ease 0.5s;
 }
 
-.desserts-banner:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
 /* ORDER BUTTON HERE */
 .order-btn {
   display: flex;
@@ -460,9 +453,19 @@ footer {
   margin: 0 auto;
   width: 375px;
   background-color: #353535;
-  animation: logo-fade-in 1s ease-in 3s forwards;
+  animation: footer-section-fade-in 1s 2.5s ease forwards;
   opacity: 0;
   /* FOOTER SYMBOLS */
+}
+@keyframes footer-section-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 footer .footer-logo-img {
   width: 137.18px;
@@ -557,30 +560,39 @@ footer .fa-solid.fa-utensils {
   .animation-1:hover label span {
     transform: translateX(565px);
   }
-  .dessert-item-p-text {
+  .starter-banner,
+  .mains-banner,
+  .desserts-banner {
+    animation: fade-in linear forwards;
+    animation-timeline: view(900px 10px);
+    animation-range-start: cover;
+    animation-range-end: cover;
+  }
+  .starter-banner .dessert-item-p-text,
+  .mains-banner .dessert-item-p-text,
+  .desserts-banner .dessert-item-p-text {
     width: 250px;
   }
+  /* FOOTER */
+  footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    position: absolute;
+    top: 1660px;
+    width: 1440px;
+    justify-content: end;
+    align-items: center;
+    background-color: #353535;
+    padding-top: 30px;
+    padding-right: 300px;
+    margin-top: 35px;
+  }
+  footer .footer-logo-img {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 800px;
+    margin-bottom: 40px;
+  }
 }
-/* FOOTER */
-footer {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  position: absolute;
-  top: 1660px;
-  width: 1440px;
-  justify-content: end;
-  align-items: center;
-  background-color: #353535;
-  padding-top: 30px;
-  padding-right: 300px;
-  margin-top: 35px;
-}
-footer .footer-logo-img {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  left: 800px;
-  margin-bottom: 40px;
-}
-
