@@ -45,14 +45,14 @@ html {
     border-top-color: #ffffff;
     border-radius: 50%;
     animation: outer-ring 1s linear infinite;
-    border-top-width: 10px;
+    border-top-width: 5px;
 }
 
 // PRE-LOADER OUTER RING
 
 .ring {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     border: 0px solid #fff;
     border-radius: 50%;
     position: absolute;
@@ -150,7 +150,9 @@ html {
 .page-container {
     display: flex;
     flex-direction: column;
-    width: 375px;
+
+    // MOBILE PAGE WIDTH CONTROLLER HERE 
+    width: 395px;
     margin: 0 auto;
     border: 1px solid $header-light-grey;
 }
@@ -180,7 +182,6 @@ html {
     display: flex;
     width: 162px;
     margin: 15px auto;
-
     opacity: 1;
 }
 
@@ -443,28 +444,20 @@ main {
     top: 250px;
     left: 290px;
     transition: 1s ease;
+    font-size: 30px;
 }
 
 .restaurant-banner i:hover {
     cursor: pointer;
     font-weight: 700;
     transition: 0.5s ease;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background: linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // -webkit-text-fill-color: transparent;
+    color: #FF79DA;
 }
 
 .restaurant-banner {
-    .fa-regular.fa-heart {
-        font-size: 30px;
-        transition: 1s ease;
-    }
-
-    .fa-regular.fa-heart:hover {
-        font-size: 33px;
-        transition: 0.25s ease;
-        background: linear-gradient(#9356DC, #FF79DA);
-    }
 
     .restaurant-banner-title {
         font-size: $h3-font-size;
@@ -552,22 +545,10 @@ footer {
     .fa-solid.fa-utensils {
         color: $white-font;
     }
-
-
-
 }
 
 
-
-
-
-
-
-
-
-
-
-// MEDIA QUARIES
+// MEDIA QUARIES STARTING HERE
 
 @media all and (min-width: 1440px) {
 
@@ -673,7 +654,7 @@ footer {
     .restaurant-banner i {
         position: relative;
         color: $grey-font;
-        top: -45px;
+        top: -60px;
         left: 420px;
     }
 
