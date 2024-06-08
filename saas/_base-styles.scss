@@ -22,7 +22,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeOut 1s 1s forwards;
+    animation: fadeOut 0.5s 1s forwards;
 }
 
 // VERSION 1
@@ -158,16 +158,6 @@ html {
 // MAIN LOGO STICKY POSITIONED HERE
 .logo-stick {
     position: relative;
-
-    // DIFFERENT BROWSER SUPPORT - OPTION 2
-
-    // position: -webkit-sticky;
-    // position: -moz-sticky;
-    // position: -ms-sticky;
-    // position: -o-sticky;
-    // position: sticky;
-    // top: 0;
-    // z-index: 99;
 }
 
 @supports (position: sticky) {
@@ -190,13 +180,15 @@ html {
     display: flex;
     width: 162px;
     margin: 15px auto;
-    opacity: 0;
+
+    opacity: 1;
 }
 
 // PAGE LOGO FADE IN 
 
 .header-logo {
-    animation: navigation-fade-in 2.5s 1s forwards;
+    animation: logo-fade-in 1s 1.5s ease forwards;
+    opacity: 0;
 }
 
 @keyframes logo-fade-in {
@@ -208,6 +200,25 @@ html {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+// HEADER SECTION FADE IN ANIMATION
+
+header {
+    animation: header-fade-in 1s 2s ease forwards;
+    opacity: 0;
+
+    @keyframes header-fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(-15px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
 
@@ -230,50 +241,12 @@ header .islington-p-tag {
     }
 }
 
-// ISLINGTON FADE IN 
-
-header .islington-p-tag {
-    animation: islington-fade-in 2.5s 1s forwards;
-}
-
-@keyframes islington-fade-in {
-    from {
-        opacity: 0;
-        transform: translateY(-15px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-// PAGE HEADER FADE IN 
-.header-title,
-.header-p-text,
-.header-button {
-    animation: islington-fade-in 2.5s 1s forwards;
-}
-
-@keyframes header-fade-in {
-    from {
-        opacity: 0;
-        transform: translateY(-15px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .header-section {
     background-color: $page-light-grey-bg;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
 
     h2.header-title {
         font-size: 24px;
@@ -318,10 +291,12 @@ header .islington-p-tag {
 // NAVIGATION SECTION
 
 .nav-section {
+    background: white;
     background-color: $white-bg;
+
     padding: 20px 25px;
     padding-bottom: 40px;
-    opacity: 0;
+    opacity: 1;
 
     .nav-section-title {
         font-size: $h2-font-size;
@@ -331,29 +306,12 @@ header .islington-p-tag {
     }
 }
 
-// NAVIGATION FADE IN ANIMATION
-
-.nav-section {
-    animation: navigation-fade-in 3s 2s forwards;
-}
-
-@keyframes navigation-fade-in {
-    from {
-        opacity: 0;
-        transform: translateY(-15px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .nav-list-holder .nav-single-option-holder {
     display: flex;
     flex-direction: row;
     align-items: center;
     border-radius: 20px;
+    background: $home-page-nav-color;
     box-shadow: $base-box-shadow;
     width: 322.49px;
     height: 72.38px;
@@ -392,12 +350,10 @@ header .islington-p-tag {
     box-shadow: $hover-box-shadow;
 }
 
-
 // MAIN SECTION - RESTAURANT 4 BANNERS
 
 main {
     background-color: $page-light-grey-bg;
-    animation: main-section-fade-in 3s 2.5s forwards;
 
     .main-section-title {
         font-size: $h2-font-size;
@@ -407,6 +363,11 @@ main {
         margin-bottom: 20px;
         margin-left: 15px;
     }
+
+    // MAIN SECTION FADE IN ANIMATION
+
+    opacity: 0;
+    animation: main-section-fade-in 1s 2.5s ease forwards;
 
     @keyframes main-section-fade-in {
         from {
@@ -419,6 +380,8 @@ main {
             transform: translateY(0);
         }
     }
+
+    // ANIMATION END
 }
 
 .restaurant-all-banners-holder {
@@ -442,18 +405,6 @@ main {
     border-radius: 15px;
     margin-bottom: 20px;
 }
-
-// @keyframes fade-in {
-//     from {
-//         scale: 0.8;
-//         opacity: 0;
-//     }
-
-//     to {
-//         scale: 1;
-//         opacity: 1;
-//     }
-// }
 
 .restaurant-banner:hover {
     box-shadow: $hover-box-shadow;
@@ -492,7 +443,6 @@ main {
     top: 250px;
     left: 290px;
     transition: 1s ease;
-
 }
 
 .restaurant-banner i:hover {
@@ -551,6 +501,24 @@ footer {
     width: 100%;
     background-color: $footer-color;
 
+    // FOOTER SECTION FADE IN ANIMATION
+    opacity: 0;
+    animation: footer-section-fade-in 1s 3s ease forwards;
+
+    @keyframes footer-section-fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(-15px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    // ANIMATION END
+
     .footer-logo-img {
         width: 137.18px;
         height: 27px;
@@ -584,7 +552,20 @@ footer {
     .fa-solid.fa-utensils {
         color: $white-font;
     }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
 
 // MEDIA QUARIES
 
