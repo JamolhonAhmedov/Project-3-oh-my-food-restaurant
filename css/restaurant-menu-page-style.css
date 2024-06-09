@@ -67,7 +67,6 @@ html {
 }
 
 .restaurant-banner-image img {
-  -o-object-fit: cover;
   object-fit: cover;
   height: 275px;
   width: 100%;
@@ -94,13 +93,13 @@ html {
   background-color: #F6F6F6;
   border-top-left-radius: 39px;
   border-top-right-radius: 39px;
-  animation: main-section-fade-in 1s 2s ease forwards;
+  animation: main-section-fade-in 2s 2s ease forwards;
   opacity: 0;
 }
 @keyframes main-section-fade-in {
   from {
     opacity: 0;
-    transform: translateY(-15px);
+    transform: translateY(25px);
   }
   to {
     opacity: 1;
@@ -119,19 +118,21 @@ html {
   margin-bottom: 30px;
 }
 
-.fa-regular.fa-heart {
+main i {
   position: absolute;
-  left: 320px;
   top: 35px;
+  left: 290px;
+  transition: 2s ease;
   font-size: 30px;
-  font-weight: 100;
-  transition: ease 1s;
 }
 
-.fa-regular.fa-heart:hover {
-  color: #9356DC;
-  font-weight: 600;
-  transition: ease 1s;
+main i:hover {
+  cursor: pointer;
+  font-weight: 700;
+  transition: 1s ease;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  color: #FF79DA;
 }
 
 /* MENU SLIDE IN AMINATION HERE */
@@ -506,11 +507,9 @@ footer .fa-solid.fa-utensils {
     justify-content: center;
   }
   .restaurant-banner-image img {
-    -o-object-fit: cover;
     object-fit: cover;
     height: 383px;
     width: 100%;
-    -o-object-position: 100% 60%;
     object-position: 100% 60%;
   }
   .page-main-section-div {
