@@ -38,7 +38,8 @@ html {
 
   // MAIN LOGO STICKY POSITIONED HERE
 
-  position: sticky;
+  // position: fixed;
+  // width: 375px;
   z-index: 99;
 
   // PAGE MAIN LOGO FADE IN 
@@ -63,6 +64,10 @@ html {
   display: flex;
   width: 162px;
   margin: 20px auto;
+
+
+  color: #fff;
+
 }
 
 .header-logo:hover {
@@ -85,11 +90,11 @@ html {
 }
 
 .restaurant-banner-image img {
-  // -o-object-fit: cover;
   object-fit: cover;
   height: 275px;
   width: 100%;
   object-position: 100% 80%;
+  padding-top: 70px;
 
   // PAGE BANNER FADE IN ANIMATION
 
@@ -112,7 +117,7 @@ html {
 .page-main-section-div {
   position: absolute;
   width: 375px;
-  top: 300px;
+  top: 240px;
   height: 1400px;
   background-color: #F6F6F6;
   border-top-left-radius: 39px;
@@ -120,7 +125,7 @@ html {
 
   // MAIN PADE FADE IN ANIMATION
 
-  animation: main-section-fade-in 2s 2s ease forwards;
+  animation: main-section-fade-in 1s 2s ease forwards;
   opacity: 0;
 
   @keyframes main-section-fade-in {
@@ -652,9 +657,6 @@ footer {
       width: 250px;
     }
   }
-
-
-
 
   /* FOOTER */
   footer {

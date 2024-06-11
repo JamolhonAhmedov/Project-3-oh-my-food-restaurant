@@ -25,7 +25,6 @@ html {
   background-color: #fff;
   border: 1px solid #fff;
   border-bottom: 2px solid rgba(128, 128, 128, 0.462);
-  position: sticky;
   z-index: 99;
   animation: logo-fade-in 1s 1s ease forwards;
   opacity: 0;
@@ -45,6 +44,7 @@ html {
   display: flex;
   width: 162px;
   margin: 20px auto;
+  color: #fff;
 }
 
 .header-logo:hover {
@@ -71,6 +71,7 @@ html {
   height: 275px;
   width: 100%;
   object-position: 100% 80%;
+  padding-top: 70px;
   animation: banner-image-fade-in 1s 1.5s ease forwards;
   opacity: 0;
 }
@@ -88,12 +89,12 @@ html {
 .page-main-section-div {
   position: absolute;
   width: 375px;
-  top: 300px;
+  top: 240px;
   height: 1400px;
   background-color: #F6F6F6;
   border-top-left-radius: 39px;
   border-top-right-radius: 39px;
-  animation: main-section-fade-in 2s 2s ease forwards;
+  animation: main-section-fade-in 1s 2s ease forwards;
   opacity: 0;
 }
 @keyframes main-section-fade-in {
