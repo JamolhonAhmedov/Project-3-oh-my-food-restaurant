@@ -275,17 +275,18 @@ header .islington-p-tag {
     border-radius: 39px;
     padding: 10px 15px;
     text-decoration: none;
-    background-image: linear-gradient($secondary, $primary-purple);
-    box-shadow: $base-box-shadow;
+    background-image: linear-gradient($primary-purple, $secondary);
+    box-shadow: $base-button-shadow;
     margin-bottom: 40px;
     transition: ease 0.3s;
+
 }
 
 .header-section .header-button:hover {
     font-size: 20px;
     font-weight: 500;
-    background-image: linear-gradient($primary-purple, $secondary);
-    box-shadow: $hover-box-shadow;
+    background-image: linear-gradient($primary-purple-lighter, $secondary);
+    box-shadow: $base-button-shadow;
     transition: ease 0.3s;
 }
 
@@ -294,7 +295,7 @@ header .islington-p-tag {
 .nav-section {
     background: white;
     background-color: $white-bg;
-
+    width: 100%;
     padding: 20px 25px;
     padding-bottom: 40px;
     opacity: 1;
@@ -318,16 +319,31 @@ header .islington-p-tag {
     height: 72.38px;
     margin-bottom: 20px;
     gap: 40px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: 0.75s ease;
 
     i {
         margin-right: -15px;
         color: $i-symbol-color;
         font-size: 22px;
+        transition: 0.75s ease;
+    }
+
+    i:hover {
+        margin-right: -15px;
+        color: $primary-purple;
+        font-size: 26px;
+        transition: 0.25s ease;
     }
 }
 
+.nav-list-holder .nav-single-option-holder:hover {
+    border: 1px solid $navigation-light-grey;
+    transition: 1.25s ease;
+}
+
 .nav-single-option-holder .nav-p-text {
-    font-size: $p-font-size;
+    font-size: $p-font-size + 2;
     font-weight: $p-font-weight;
     line-height: $p-line-height;
 }
@@ -341,14 +357,13 @@ header .islington-p-tag {
     font-size: 14.18px;
     font-weight: 500;
     line-height: 16.62px;
-    transition: ease 0.3s;
+    transition: ease 0.75s;
 }
 
 .nav-1-2-3-numbers:hover {
     padding: 10px 15px;
     transition: ease 0.3s;
-    background-color: $color-dark-purple;
-    box-shadow: $hover-box-shadow;
+    box-shadow: 0 10px 5px 0.1px rgba(0, 0, 0, 0.25);
 }
 
 // MAIN SECTION - RESTAURANT 4 BANNERS
@@ -405,11 +420,16 @@ main {
     background-color: $white-bg;
     border-radius: 15px;
     margin-bottom: 20px;
+
+    border: 1px solid $navigation-light-grey;
+    transition: ease 0.5s;
 }
 
 .restaurant-banner:hover {
     box-shadow: $hover-box-shadow;
-    transition: ease 0.5s;
+    border: 1px solid $navigation-light-grey;
+    transition: ease 0.3s;
+
 }
 
 .restaurant-new-button {

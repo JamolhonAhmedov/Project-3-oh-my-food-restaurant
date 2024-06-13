@@ -241,8 +241,8 @@ header .islington-p-tag i {
   border-radius: 39px;
   padding: 10px 15px;
   text-decoration: none;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 40px;
   transition: ease 0.3s;
 }
@@ -250,14 +250,15 @@ header .islington-p-tag i {
 .header-section .header-button:hover {
   font-size: 20px;
   font-weight: 500;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(#aa81dc, #FF79DA);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: ease 0.3s;
 }
 
 .nav-section {
   background: white;
   background-color: #fff;
+  width: 100%;
   padding: 20px 25px;
   padding-bottom: 40px;
   opacity: 1;
@@ -280,15 +281,29 @@ header .islington-p-tag i {
   height: 72.38px;
   margin-bottom: 20px;
   gap: 40px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: 0.75s ease;
 }
 .nav-list-holder .nav-single-option-holder i {
   margin-right: -15px;
   color: #7e7e7e;
   font-size: 22px;
+  transition: 0.75s ease;
+}
+.nav-list-holder .nav-single-option-holder i:hover {
+  margin-right: -15px;
+  color: #9356DC;
+  font-size: 26px;
+  transition: 0.25s ease;
+}
+
+.nav-list-holder .nav-single-option-holder:hover {
+  border: 1px solid #e6e2e2;
+  transition: 1.25s ease;
 }
 
 .nav-single-option-holder .nav-p-text {
-  font-size: 15.04px;
+  font-size: 17.04px;
   font-weight: 300;
   line-height: 17.63px;
 }
@@ -302,14 +317,13 @@ header .islington-p-tag i {
   font-size: 14.18px;
   font-weight: 500;
   line-height: 16.62px;
-  transition: ease 0.3s;
+  transition: ease 0.75s;
 }
 
 .nav-1-2-3-numbers:hover {
   padding: 10px 15px;
   transition: ease 0.3s;
-  background-color: #6521b9;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 5px 0.1px rgba(0, 0, 0, 0.25);
 }
 
 main {
@@ -356,11 +370,14 @@ main .main-section-title {
   background-color: #fff;
   border-radius: 15px;
   margin-bottom: 20px;
+  border: 1px solid #e6e2e2;
+  transition: ease 0.5s;
 }
 
 .restaurant-banner:hover {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-  transition: ease 0.5s;
+  border: 1px solid #e6e2e2;
+  transition: ease 0.3s;
 }
 
 .restaurant-new-button {
